@@ -1,0 +1,1031 @@
+{
+  "ASHRAEFullServiceRestaurant": {
+    "description": "Exact public FullServiceRestaurant classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/FullServiceRestaurant.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAEFullServiceRestaurant.osm",
+    "source_sha256": "c348b012224ed82c454ed1744b22807ec85ab2832e5b6376acda0477edba4468",
+    "fixture_sha256": "49edd87745e14d39aff6f0b1231387ece204cea0f70913641d34b1e1fbc43da2",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "FullServiceRestaurant",
+        "source_space_type": "Attic",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "- undefined -"
+      },
+      {
+        "source_building_type": "FullServiceRestaurant",
+        "source_space_type": "Dining",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dining - family space"
+      },
+      {
+        "source_building_type": "FullServiceRestaurant",
+        "source_space_type": "Kitchen",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Food preparation"
+      }
+    ]
+  },
+  "ASHRAEQuickServiceRestaurant": {
+    "description": "Exact public QuickServiceRestaurant classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/QuickServiceRestaurant.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAEQuickServiceRestaurant.osm",
+    "source_sha256": "c6a12422a903691c304afdf446fb5ca1f80db475c60be7beb7344d5850686163",
+    "fixture_sha256": "57684179f2961332c72957879e933b202406253a7bd1d73bb9c1f7eb00346d79",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "QuickServiceRestaurant",
+        "source_space_type": "Attic",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "- undefined -"
+      },
+      {
+        "source_building_type": "QuickServiceRestaurant",
+        "source_space_type": "Dining",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dining - bar lounge/leisure"
+      },
+      {
+        "source_building_type": "QuickServiceRestaurant",
+        "source_space_type": "Kitchen",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Food preparation"
+      }
+    ]
+  },
+  "ASHRAESmallOffice": {
+    "description": "Exact public SmallOffice classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/SmallOffice.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAESmallOffice.osm",
+    "source_sha256": "9ee3bcb6e5849d1f488ba01e61979e9ae935c6fed894bcfda7db6fa4636f9554",
+    "fixture_sha256": "ead38a2b644ec5e96df6fb40a4bc91482126ee11bd8264e5cd055fcaffa3eb02",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "Office",
+        "source_space_type": "Attic",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "- undefined -"
+      },
+      {
+        "source_building_type": "Office",
+        "source_space_type": "WholeBuilding - Sm Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - enclosed"
+      }
+    ]
+  },
+  "ASHRAEMediumOffice": {
+    "description": "Exact public MediumOffice classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/MediumOffice.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAEMediumOffice.osm",
+    "source_sha256": "f4385f08196b7bd68c42a20c0f6fc9c8dfcf8f41ea877741e5698a3e71189e7e",
+    "fixture_sha256": "b33b47b141344dc521034976ef434d196e480efcf39e8543deb5ed577e5807ab",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "MediumOffice",
+        "source_space_type": "Plenum",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "- undefined -"
+      },
+      {
+        "source_building_type": "Office",
+        "source_space_type": "WholeBuilding - Md Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - open plan"
+      }
+    ]
+  },
+  "ASHRAELargeOffice": {
+    "description": "Exact public LargeOffice classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/LargeOffice.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAELargeOffice.osm",
+    "source_sha256": "f3356366ee1336f5e20d46a808f675dfbd9e713e5f03cd71d3c7d59d622e171c",
+    "fixture_sha256": "d7aae7fa2e2245e8a0cd9e8255703341388e3105687fc1b2b75e16f1a20c35d4",
+    "unmatched_source_pairs": [
+      [
+        "Office",
+        "WholeBuilding - Lg Office"
+      ]
+    ],
+    "mappings": [
+      {
+        "source_building_type": "LargeOffice",
+        "source_space_type": "Plenum",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "- undefined -"
+      },
+      {
+        "source_building_type": "Office",
+        "source_space_type": "OfficeLarge Data Center",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - open plan"
+      },
+      {
+        "source_building_type": "Office",
+        "source_space_type": "OfficeLarge Main Data Center",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - open plan"
+      }
+    ]
+  },
+  "ASHRAEWarehouse": {
+    "description": "Exact public Warehouse classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/Warehouse.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAE90120102013Warehouse.osm",
+    "source_sha256": "8f60a805fe7fae7daf904becc600afee5da8470d5c655394f819301e5a936eb9",
+    "fixture_sha256": "6285b3c618a7797802c30add02d5d27a4bcc6fa6ba73b45241bc4a97403cbb8b",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "Warehouse",
+        "source_space_type": "Bulk",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Warehouse - med/blk"
+      },
+      {
+        "source_building_type": "Warehouse",
+        "source_space_type": "Fine",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Warehouse - fine"
+      },
+      {
+        "source_building_type": "Warehouse",
+        "source_space_type": "Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - enclosed"
+      }
+    ]
+  },
+  "ASHRAERetailStandalone": {
+    "description": "Exact public RetailStandalone classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/RetailStandalone.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAE9012013RetailStandalone.osm",
+    "source_sha256": "ec60240a86cb5c20c73648d6176369f0cbf597776f7b7ae6171ea7bcec96d38c",
+    "fixture_sha256": "0a102e834e5659f650721fb357aa1e7174df7fd2da78d55f19876d7772494d4c",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "Retail",
+        "source_space_type": "Back_Space",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area"
+      },
+      {
+        "source_building_type": "Retail",
+        "source_space_type": "Core_Retail",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      },
+      {
+        "source_building_type": "Retail",
+        "source_space_type": "Entry",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Lobby - elevator"
+      },
+      {
+        "source_building_type": "Retail",
+        "source_space_type": "Front_Retail",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      },
+      {
+        "source_building_type": "Retail",
+        "source_space_type": "Point_of_Sale",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      }
+    ]
+  },
+  "ASHRAERetailStripmall": {
+    "description": "Exact public RetailStripmall classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/RetailStripmall.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAERetailStripmall.osm",
+    "source_sha256": "6deafcf85101aa87b2c3bae82b22ea924fa35ba9ec6953c147d2b85726edc883",
+    "fixture_sha256": "7d47e1deea0971326139c17224e4607157cf4dafed64b9ec7f5f3a0c8c1d4fea",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "StripMall",
+        "source_space_type": "Strip mall - type 1",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      },
+      {
+        "source_building_type": "StripMall",
+        "source_space_type": "Strip mall - type 2",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      },
+      {
+        "source_building_type": "StripMall",
+        "source_space_type": "Strip mall - type 3",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      }
+    ]
+  },
+  "ASHRAEPrimarySchool": {
+    "description": "Exact public PrimarySchool classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/PrimarySchool.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAEPrimarySchool.osm",
+    "source_sha256": "b315ea9443c833af7dcdb2c6b85264e645af2023f6137a0db099ecc4289ca5cf",
+    "fixture_sha256": "63a43d3bc87a6b56abf2ed8fc0490a3909d1fcb2211b8055bcc422a1c4cb8021",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Cafeteria",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Conf./meet./multi-purpose"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Classroom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Classroom/lecture/training"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "ComputerRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Classroom/lecture/training"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Corridor",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. >= 2.4m wide-sch-D"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Gym",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Gym - play"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Kitchen",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Food preparation"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Library",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Library - reading"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Lobby",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Lobby - other"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Mechanical",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Electrical/Mechanical-sch-D"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - enclosed"
+      },
+      {
+        "source_building_type": "PrimarySchool",
+        "source_space_type": "Restroom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Washroom-sch-D"
+      }
+    ]
+  },
+  "ASHRAESecondarySchool": {
+    "description": "Exact public SecondarySchool classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/SecondarySchool.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAESecondarySchool.osm",
+    "source_sha256": "877f455f3cf51c919b217d609b045f5ae07808feb5b167465c4aabc7d5e8a02f",
+    "fixture_sha256": "6a37ec2bdc0a9c4e4a214f84145794b00f5ce31057a000c4ba2136a3ee331645",
+    "unmatched_source_pairs": [
+      [
+        "SecondarySchool",
+        "Auditorium"
+      ],
+      [
+        "SecondarySchool",
+        "Gym"
+      ]
+    ],
+    "mappings": [
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Cafeteria",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Conf./meet./multi-purpose"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Classroom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Classroom/lecture/training"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "ComputerRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Classroom/lecture/training"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Corridor",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. >= 2.4m wide-sch-D"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Kitchen",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Food preparation"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Library",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Library - reading"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Lobby",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Lobby - other"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Mechanical",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Electrical/Mechanical-sch-D"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - enclosed"
+      },
+      {
+        "source_building_type": "SecondarySchool",
+        "source_space_type": "Restroom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Washroom-sch-D"
+      }
+    ]
+  },
+  "ASHRAESmallHotel": {
+    "description": "Exact public SmallHotel classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/SmallHotel.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAESmallHotel.osm",
+    "source_sha256": "806d4eb32dca43b26528015cdb46aa8f9dd984c7477035c21bfd8b6378b3c83b",
+    "fixture_sha256": "075726b7992589a30e57ed4c10c3a74028dc00290775489d5454e9b368ef8a71",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Corridor",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. >= 2.4m wide-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Corridor4",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. >= 2.4m wide-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Elec/MechRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. >= 2.4m wide-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "ElevatorCore",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. >= 2.4m wide-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "ElevatorCore4",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. >= 2.4m wide-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Exercise",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Gym - fitness"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "GuestLounge",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hotel/Motel - lobby"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "GuestRoom123Occ",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hway lodging - rooms"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "GuestRoom123Vac",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hway lodging - rooms"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "GuestRoom4Occ",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hway lodging - rooms"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "GuestRoom4Vac",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hway lodging - rooms"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Laundry",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Mechanical",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Electrical/Mechanical-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Meeting",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Conf./meet./multi-purpose"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - enclosed"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "PublicRestroom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Washroom-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "StaffLounge",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Lounge/recreation"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Stair",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Stairway-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Stair4",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Stairway-sch-F"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Storage",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Storage4Front",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      },
+      {
+        "source_building_type": "SmallHotel",
+        "source_space_type": "Storage4Rear",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      }
+    ]
+  },
+  "ASHRAELargeHotel": {
+    "description": "Exact public LargeHotel classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/LargeHotel.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAELargeHotel.osm",
+    "source_sha256": "f9a7e831ea9ecc33ffbd8a6925fe1295f315983ef84407058eeaac2a901dbe9e",
+    "fixture_sha256": "3ad0037c6d11f6137772e84ee47c214bcd92902194e1a5b7da542081202e96ff",
+    "unmatched_source_pairs": [
+      [
+        "LargeHotel",
+        "Corridor2"
+      ],
+      [
+        "LargeHotel",
+        "Corridor"
+      ],
+      [
+        "LargeHotel",
+        "GuestRoom2"
+      ],
+      [
+        "LargeHotel",
+        "GuestRoom4"
+      ],
+      [
+        "LargeHotel",
+        "GuestRoom8"
+      ]
+    ],
+    "mappings": [
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Banquet",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hotel/Motel - dining"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Basement",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Cafe",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - mall concourse"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "GuestRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hotel/Motel - rooms"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "GuestRoom3",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hotel/Motel - rooms"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Kitchen",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Food preparation"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Laundry",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - laundry/washing"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Lobby",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hotel/Motel - lobby"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Mechanical",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Electrical/Mechanical-sch-E"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Retail",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Retail2",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Retail - sales"
+      },
+      {
+        "source_building_type": "LargeHotel",
+        "source_space_type": "Storage",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      }
+    ]
+  },
+  "ASHRAEMidriseApartment": {
+    "description": "Exact public MidriseApartment classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/MidriseApartment.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAEMidriseApartment.osm",
+    "source_sha256": "207c80d46909e3010d8fa458f485d069d1faf9f4b77301255faf14164b5b3c6f",
+    "fixture_sha256": "a045da0419a016948fa2aa92883a27162c1c6bc36674959efe6ca11a88b066ac",
+    "unmatched_source_pairs": [
+      [
+        "MidriseApartment",
+        "Apartment_topfloor_WE"
+      ],
+      [
+        "MidriseApartment",
+        "Apartment"
+      ],
+      [
+        "MidriseApartment",
+        "Apartment_topfloor_NS"
+      ],
+      [
+        "MidriseApartment",
+        "Corridor"
+      ],
+      [
+        "MidriseApartment",
+        "Corridor_topfloor"
+      ]
+    ],
+    "mappings": [
+      {
+        "source_building_type": "MidriseApartment",
+        "source_space_type": "Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dwelling Unit(s)"
+      }
+    ]
+  },
+  "ASHRAEHighriseApartment": {
+    "description": "Exact public HighriseApartment classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/HighriseApartment.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAEHighriseApartment.osm",
+    "source_sha256": "10d9cf5727733a63bfcf0be792e27a509914c74b64955d58607c6bc620930a2c",
+    "fixture_sha256": "5151aa887f2ee822ed2c670fc8ab8dcac0a40bb2f93cc0ae6d304cbac169eaaa",
+    "unmatched_source_pairs": [
+
+    ],
+    "mappings": [
+      {
+        "source_building_type": "HighriseApartment",
+        "source_space_type": "Apartment",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dwelling Unit(s)"
+      },
+      {
+        "source_building_type": "HighriseApartment",
+        "source_space_type": "Apartment_topfloor_NS",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dwelling Unit(s)"
+      },
+      {
+        "source_building_type": "HighriseApartment",
+        "source_space_type": "Apartment_topfloor_WE",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dwelling Unit(s)"
+      },
+      {
+        "source_building_type": "HighriseApartment",
+        "source_space_type": "Corridor",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. < 2.4m wide-sch-G"
+      },
+      {
+        "source_building_type": "HighriseApartment",
+        "source_space_type": "Corridor_topfloor",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Corr. < 2.4m wide-sch-G"
+      },
+      {
+        "source_building_type": "HighriseApartment",
+        "source_space_type": "Office",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dwelling Unit(s)"
+      }
+    ]
+  },
+  "ASHRAEOutpatient": {
+    "description": "Exact public Outpatient classifications. Review applicability and wildcard uses for the project.",
+    "source": "openstudio-standards/lib/openstudio-standards/standards/necb/NECB2011/data/geometry/Outpatient.osm",
+    "fixture": "openstudio-standards/data/geometry/ASHRAEOutpatient.osm",
+    "source_sha256": "e9201877d99e63b141382b1818456c22b72f3072305b9a356335d3156e3ff992",
+    "fixture_sha256": "c3750362efc09e51e7c36eeaea64859358c891e6b5a8f79dad03233bb213a026",
+    "unmatched_source_pairs": [
+      [
+        "Outpatient",
+        "Reception"
+      ],
+      [
+        "Outpatient",
+        "Office"
+      ],
+      [
+        "Outpatient",
+        "PACU"
+      ],
+      [
+        "Outpatient",
+        "Hall"
+      ],
+      [
+        "Outpatient",
+        "Stair"
+      ],
+      [
+        "Outpatient",
+        "Hall_infil"
+      ],
+      [
+        "Outpatient",
+        "Undeveloped"
+      ],
+      [
+        "Outpatient",
+        "Xray"
+      ]
+    ],
+    "mappings": [
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Anesthesia",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - operating room"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "BioHazard",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Cafe",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Dining - bar lounge/leisure"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "CleanWork",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - laundry/washing"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Conference",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Conf./meet./multi-purpose"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "DressingRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - enclosed"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Elec/MechRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Electrical/Mechanical-sch-H"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "ElevatorPumpRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Electrical/Mechanical-sch-H"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Exam",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - exam"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "IT_Room",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Office - enclosed"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Janitor",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Lobby",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Lobby - elevator"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "LockerRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Locker room-sch-H"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Lounge",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - lounge/recreation"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "MRI",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - radiology/imaging"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "MRI_Control",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - radiology/imaging"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "MedGas",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Storage area - occsens"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "NurseStation",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - nurses station"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "OR",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - operating room"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "PhysicalTherapy",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - physical therapy"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "PreOp",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - patient room"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "ProcedureRoom",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - operating room"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Soil Work",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Hospital - laundry/washing"
+      },
+      {
+        "source_building_type": "Outpatient",
+        "source_space_type": "Toilet",
+        "necb_vintage": "NECB2011",
+        "necb_building_type": "Space Function",
+        "necb_space_type": "Washroom-sch-H"
+      }
+    ]
+  }
+}

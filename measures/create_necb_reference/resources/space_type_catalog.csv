@@ -1,0 +1,1619 @@
+necb_vintage,necb_building_type,necb_space_type
+NECB2011,Automotive facility,WholeBuilding
+NECB2011,Convention centre,WholeBuilding
+NECB2011,Courthouse,WholeBuilding
+NECB2011,Dining - bar/lounge,WholeBuilding
+NECB2011,Dining - cafeteria,WholeBuilding
+NECB2011,Dining - family,WholeBuilding
+NECB2011,Dormitory,WholeBuilding
+NECB2011,Exercise centre,WholeBuilding
+NECB2011,Fire station,WholeBuilding
+NECB2011,Gymnasium,WholeBuilding
+NECB2011,Health-care clinic,WholeBuilding
+NECB2011,Hospital,WholeBuilding
+NECB2011,Hotel,WholeBuilding
+NECB2011,Library,WholeBuilding
+NECB2011,Manufacturing facility,WholeBuilding
+NECB2011,Motel,WholeBuilding
+NECB2011,Motion picture theatre,WholeBuilding
+NECB2011,Multi-unit residential,WholeBuilding
+NECB2011,Museum,WholeBuilding
+NECB2011,Office,WholeBuilding
+NECB2011,Parking garage,WholeBuilding
+NECB2011,Penitentiary,WholeBuilding
+NECB2011,Performing arts theatre,WholeBuilding
+NECB2011,Police station,WholeBuilding
+NECB2011,Post office,WholeBuilding
+NECB2011,Religious,WholeBuilding
+NECB2011,Retail,WholeBuilding
+NECB2011,School/university,WholeBuilding
+NECB2011,Space Function,- undefined -
+NECB2011,Space Function,Atrium - H < 13m
+NECB2011,Space Function,Atrium - H > 13m
+NECB2011,Space Function,Audience - auditorium
+NECB2011,Space Function,Audience - motion picture
+NECB2011,Space Function,Audience - performance arts
+NECB2011,Space Function,Automotive - repair
+NECB2011,Space Function,Bank - banking and offices
+NECB2011,Space Function,Classroom/lecture/training
+NECB2011,Space Function,Conf./meet./multi-purpose
+NECB2011,Space Function,Convention centre - audience
+NECB2011,Space Function,Convention centre - exhibit
+NECB2011,Space Function,Corr. < 2.4m wide-sch-A
+NECB2011,Space Function,Corr. < 2.4m wide-sch-B
+NECB2011,Space Function,Corr. < 2.4m wide-sch-C
+NECB2011,Space Function,Corr. < 2.4m wide-sch-D
+NECB2011,Space Function,Corr. < 2.4m wide-sch-E
+NECB2011,Space Function,Corr. < 2.4m wide-sch-F
+NECB2011,Space Function,Corr. < 2.4m wide-sch-G
+NECB2011,Space Function,Corr. < 2.4m wide-sch-H
+NECB2011,Space Function,Corr. < 2.4m wide-sch-I
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-A
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-B
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-C
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-D
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-E
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-F
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-G
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-H
+NECB2011,Space Function,Corr. >= 2.4m wide-sch-I
+NECB2011,Space Function,Courthouse - cell
+NECB2011,Space Function,Courthouse - chambers
+NECB2011,Space Function,Courthouse - courtroom
+NECB2011,Space Function,Dining - bar lounge/leisure
+NECB2011,Space Function,Dining - family space
+NECB2011,Space Function,Dining - other
+NECB2011,Space Function,Dormitory - living quarters
+NECB2011,Space Function,Dress./fitt. - performance arts
+NECB2011,Space Function,Dwelling Unit(s)
+NECB2011,Space Function,Electrical/Mechanical-sch-A
+NECB2011,Space Function,Electrical/Mechanical-sch-B
+NECB2011,Space Function,Electrical/Mechanical-sch-C
+NECB2011,Space Function,Electrical/Mechanical-sch-D
+NECB2011,Space Function,Electrical/Mechanical-sch-E
+NECB2011,Space Function,Electrical/Mechanical-sch-F
+NECB2011,Space Function,Electrical/Mechanical-sch-G
+NECB2011,Space Function,Electrical/Mechanical-sch-H
+NECB2011,Space Function,Electrical/Mechanical-sch-I
+NECB2011,Space Function,Fire station - engine room
+NECB2011,Space Function,Fire station - quarters
+NECB2011,Space Function,Food preparation
+NECB2011,Space Function,Food preparation - vented
+NECB2011,Space Function,Gym - audience
+NECB2011,Space Function,Gym - fitness
+NECB2011,Space Function,Gym - play
+NECB2011,Space Function,Hospital - emergency
+NECB2011,Space Function,Hospital - exam
+NECB2011,Space Function,Hospital - laundry/washing
+NECB2011,Space Function,Hospital - lounge/recreation
+NECB2011,Space Function,Hospital - medical supply
+NECB2011,Space Function,Hospital - medical supply - occsens
+NECB2011,Space Function,Hospital - nursery
+NECB2011,Space Function,Hospital - nurses station
+NECB2011,Space Function,Hospital - operating room
+NECB2011,Space Function,Hospital - patient room
+NECB2011,Space Function,Hospital - pharmacy
+NECB2011,Space Function,Hospital - physical therapy
+NECB2011,Space Function,Hospital - radiology/imaging
+NECB2011,Space Function,Hospital - recovery
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-A
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-B
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-C
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-D
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-E
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-F
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-G
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-H
+NECB2011,Space Function,Hospital corr. < 2.4m-sch-I
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-A
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-B
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-C
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-D
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-E
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-F
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-G
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-H
+NECB2011,Space Function,Hospital corr. >= 2.4m-sch-I
+NECB2011,Space Function,Hotel/Motel - dining
+NECB2011,Space Function,Hotel/Motel - lobby
+NECB2011,Space Function,Hotel/Motel - rooms
+NECB2011,Space Function,Hway lodging - dining
+NECB2011,Space Function,Hway lodging - rooms
+NECB2011,Space Function,Lab - classrooms
+NECB2011,Space Function,Lab - research
+NECB2011,Space Function,Library - cataloging
+NECB2011,Space Function,Library - reading
+NECB2011,Space Function,Library - stacks
+NECB2011,Space Function,Lobby - elevator
+NECB2011,Space Function,Lobby - motion picture
+NECB2011,Space Function,Lobby - other
+NECB2011,Space Function,Lobby - performance arts
+NECB2011,Space Function,Locker room-sch-A
+NECB2011,Space Function,Locker room-sch-B
+NECB2011,Space Function,Locker room-sch-C
+NECB2011,Space Function,Locker room-sch-D
+NECB2011,Space Function,Locker room-sch-E
+NECB2011,Space Function,Locker room-sch-F
+NECB2011,Space Function,Locker room-sch-G
+NECB2011,Space Function,Locker room-sch-H
+NECB2011,Space Function,Locker room-sch-I
+NECB2011,Space Function,Lounge/recreation
+NECB2011,Space Function,Mfg - 7.5 <= bay H <= 15m
+NECB2011,Space Function,Mfg - bay H < 7.5m
+NECB2011,Space Function,Mfg - bay H > 15m
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-A
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-B
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-C
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-D
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-E
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-F
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-G
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-H
+NECB2011,Space Function,Mfg - corr. < 2.4m-sch-I
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-A
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-B
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-C
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-D
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-E
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-F
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-G
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-H
+NECB2011,Space Function,Mfg - corr. >= 2.4m-sch-I
+NECB2011,Space Function,Mfg - detailed
+NECB2011,Space Function,Mfg - equipment
+NECB2011,Space Function,Museum - exhibition
+NECB2011,Space Function,Museum - restoration
+NECB2011,Space Function,Office - enclosed
+NECB2011,Space Function,Office - enclosed - occsens
+NECB2011,Space Function,Office - open plan
+NECB2011,Space Function,Parking garage space
+NECB2011,Space Function,Penitentiary - audience
+NECB2011,Space Function,Penitentiary - classroom
+NECB2011,Space Function,Penitentiary - dining
+NECB2011,Space Function,Post office sorting
+NECB2011,Space Function,Religious - audience
+NECB2011,Space Function,Religious - fellowship hall
+NECB2011,Space Function,Religious - pulpit/choir
+NECB2011,Space Function,Retail - dressing/fitting
+NECB2011,Space Function,Retail - mall concourse
+NECB2011,Space Function,Retail - sales
+NECB2011,Space Function,Sales area
+NECB2011,Space Function,Sports arena - audience
+NECB2011,Space Function,Sports arena - court c1
+NECB2011,Space Function,Sports arena - court c2
+NECB2011,Space Function,Sports arena - court c3
+NECB2011,Space Function,Sports arena - court c4
+NECB2011,Space Function,Sports arena - ring
+NECB2011,Space Function,Stairway-sch-A
+NECB2011,Space Function,Stairway-sch-B
+NECB2011,Space Function,Stairway-sch-C
+NECB2011,Space Function,Stairway-sch-D
+NECB2011,Space Function,Stairway-sch-E
+NECB2011,Space Function,Stairway-sch-F
+NECB2011,Space Function,Stairway-sch-G
+NECB2011,Space Function,Stairway-sch-H
+NECB2011,Space Function,Stairway-sch-I
+NECB2011,Space Function,Storage area
+NECB2011,Space Function,Storage area - occsens
+NECB2011,Space Function,Storage area - refrigerated
+NECB2011,Space Function,Storage area - refrigerated - occsens
+NECB2011,Space Function,Transp. baggage
+NECB2011,Space Function,Transp. concourse
+NECB2011,Space Function,Transp. counter
+NECB2011,Space Function,Transp. seating
+NECB2011,Space Function,Warehouse - fine
+NECB2011,Space Function,Warehouse - fine - refrigerated
+NECB2011,Space Function,Warehouse - med/blk
+NECB2011,Space Function,Warehouse - med/blk - refrigerated
+NECB2011,Space Function,Warehouse - med/blk2
+NECB2011,Space Function,Warehouse - med/blk2 - refrigerated
+NECB2011,Space Function,Washroom-sch-A
+NECB2011,Space Function,Washroom-sch-B
+NECB2011,Space Function,Washroom-sch-C
+NECB2011,Space Function,Washroom-sch-D
+NECB2011,Space Function,Washroom-sch-E
+NECB2011,Space Function,Washroom-sch-F
+NECB2011,Space Function,Washroom-sch-G
+NECB2011,Space Function,Washroom-sch-H
+NECB2011,Space Function,Washroom-sch-I
+NECB2011,Space Function,Workshop space
+NECB2011,Sports arena,WholeBuilding
+NECB2011,Town hall,WholeBuilding
+NECB2011,Transportation,WholeBuilding
+NECB2011,Warehouse,WholeBuilding
+NECB2011,Warehouse - refrigerated,WholeBuilding
+NECB2011,Workshop,WholeBuilding
+NECB2015,Automotive facility,WholeBuilding
+NECB2015,Convention centre,WholeBuilding
+NECB2015,Courthouse,WholeBuilding
+NECB2015,Dining - bar lounge/leisure,WholeBuilding
+NECB2015,Dining - cafeteria/fast food,WholeBuilding
+NECB2015,Dining - family,WholeBuilding
+NECB2015,Dormitory,WholeBuilding
+NECB2015,Exercise centre,WholeBuilding
+NECB2015,Fire station,WholeBuilding
+NECB2015,Gymnasium,WholeBuilding
+NECB2015,Health care clinic,WholeBuilding
+NECB2015,Hospital,WholeBuilding
+NECB2015,Hotel/Motel,WholeBuilding
+NECB2015,Library,WholeBuilding
+NECB2015,Long-term care - dwelling units,WholeBuilding
+NECB2015,Long-term care - other,WholeBuilding
+NECB2015,Manufacturing facility,WholeBuilding
+NECB2015,Motion picture theatre,WholeBuilding
+NECB2015,Multi-unit residential building,WholeBuilding
+NECB2015,Museum,WholeBuilding
+NECB2015,Office,WholeBuilding
+NECB2015,Penitentiary,WholeBuilding
+NECB2015,Performing arts theatre,WholeBuilding
+NECB2015,Police station,WholeBuilding
+NECB2015,Post office,WholeBuilding
+NECB2015,Religious building,WholeBuilding
+NECB2015,Retail area,WholeBuilding
+NECB2015,School/university,WholeBuilding
+NECB2015,Space Function,- undefined -
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-A
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-B
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-C
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-D
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-E
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-F
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-G
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-H
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-I
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-J
+NECB2015,Space Function,Atrium (6 =< height <= 12m)-sch-K
+NECB2015,Space Function,Atrium (height < 6m)-sch-A
+NECB2015,Space Function,Atrium (height < 6m)-sch-B
+NECB2015,Space Function,Atrium (height < 6m)-sch-C
+NECB2015,Space Function,Atrium (height < 6m)-sch-D
+NECB2015,Space Function,Atrium (height < 6m)-sch-E
+NECB2015,Space Function,Atrium (height < 6m)-sch-F
+NECB2015,Space Function,Atrium (height < 6m)-sch-G
+NECB2015,Space Function,Atrium (height < 6m)-sch-H
+NECB2015,Space Function,Atrium (height < 6m)-sch-I
+NECB2015,Space Function,Atrium (height < 6m)-sch-J
+NECB2015,Space Function,Atrium (height < 6m)-sch-K
+NECB2015,Space Function,Atrium (height > 12m)-sch-A
+NECB2015,Space Function,Atrium (height > 12m)-sch-B
+NECB2015,Space Function,Atrium (height > 12m)-sch-C
+NECB2015,Space Function,Atrium (height > 12m)-sch-D
+NECB2015,Space Function,Atrium (height > 12m)-sch-E
+NECB2015,Space Function,Atrium (height > 12m)-sch-F
+NECB2015,Space Function,Atrium (height > 12m)-sch-G
+NECB2015,Space Function,Atrium (height > 12m)-sch-H
+NECB2015,Space Function,Atrium (height > 12m)-sch-I
+NECB2015,Space Function,Atrium (height > 12m)-sch-J
+NECB2015,Space Function,Atrium (height > 12m)-sch-K
+NECB2015,Space Function,Audience seating area permanent - auditorium
+NECB2015,Space Function,Audience seating area permanent - convention centre
+NECB2015,Space Function,Audience seating area permanent - gymnasium
+NECB2015,Space Function,Audience seating area permanent - motion picture theatre
+NECB2015,Space Function,Audience seating area permanent - other-sch-A
+NECB2015,Space Function,Audience seating area permanent - other-sch-B
+NECB2015,Space Function,Audience seating area permanent - other-sch-C
+NECB2015,Space Function,Audience seating area permanent - other-sch-D
+NECB2015,Space Function,Audience seating area permanent - other-sch-E
+NECB2015,Space Function,Audience seating area permanent - other-sch-F
+NECB2015,Space Function,Audience seating area permanent - other-sch-G
+NECB2015,Space Function,Audience seating area permanent - other-sch-H
+NECB2015,Space Function,Audience seating area permanent - other-sch-I
+NECB2015,Space Function,Audience seating area permanent - other-sch-J
+NECB2015,Space Function,Audience seating area permanent - other-sch-K
+NECB2015,Space Function,Audience seating area permanent - penitentiary
+NECB2015,Space Function,Audience seating area permanent - performing arts theatre
+NECB2015,Space Function,Audience seating area permanent - religious building
+NECB2015,Space Function,Audience seating area permanent - sports arena
+NECB2015,Space Function,Banking activity area and offices
+NECB2015,Space Function,Classroom/Lecture hall/Training room - Penitentary
+NECB2015,Space Function,Classroom/Lecture hall/Training room other
+NECB2015,Space Function,Computer/Server room-sch-A
+NECB2015,Space Function,Computer/Server room-sch-B
+NECB2015,Space Function,Computer/Server room-sch-C
+NECB2015,Space Function,Computer/Server room-sch-D
+NECB2015,Space Function,Computer/Server room-sch-E
+NECB2015,Space Function,Computer/Server room-sch-F
+NECB2015,Space Function,Computer/Server room-sch-G
+NECB2015,Space Function,Computer/Server room-sch-H
+NECB2015,Space Function,Computer/Server room-sch-I
+NECB2015,Space Function,Computer/Server room-sch-J
+NECB2015,Space Function,Computer/Server room-sch-K
+NECB2015,Space Function,Conference/Meeting/Multi-purpose room
+NECB2015,Space Function,Confinement cell
+NECB2015,Space Function,Convention centre exhibit space
+NECB2015,Space Function,Copy/Print room
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-A
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-B
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-C
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-D
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-E
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-F
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-G
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-H
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-I
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-J
+NECB2015,Space Function,Corridor/Transition area - hospital-sch-K
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-A
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-B
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-C
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-D
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-E
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-F
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-G
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-H
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-I
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-J
+NECB2015,Space Function,Corridor/Transition area - manufacturing facility-sch-K
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-A
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-B
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-C
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-D
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-E
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-F
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-G
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-H
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-I
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-J
+NECB2015,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-K
+NECB2015,Space Function,Corridor/Transition area other-sch-A
+NECB2015,Space Function,Corridor/Transition area other-sch-B
+NECB2015,Space Function,Corridor/Transition area other-sch-C
+NECB2015,Space Function,Corridor/Transition area other-sch-D
+NECB2015,Space Function,Corridor/Transition area other-sch-E
+NECB2015,Space Function,Corridor/Transition area other-sch-F
+NECB2015,Space Function,Corridor/Transition area other-sch-G
+NECB2015,Space Function,Corridor/Transition area other-sch-H
+NECB2015,Space Function,Corridor/Transition area other-sch-I
+NECB2015,Space Function,Corridor/Transition area other-sch-J
+NECB2015,Space Function,Corridor/Transition area other-sch-K
+NECB2015,Space Function,Courtroom
+NECB2015,Space Function,Dining area - bar lounge/leisure dining
+NECB2015,Space Function,Dining area - cafeteria/fast food dining
+NECB2015,Space Function,Dining area - family dining
+NECB2015,Space Function,Dining area - other
+NECB2015,Space Function,Dining area - penitentiary
+NECB2015,Space Function,Dining area - space designed to ANSI/IES RP-28 (used primarily by residents)
+NECB2015,Space Function,Dormitory living quarters
+NECB2015,Space Function,Dressing/Fitting room - performing arts theatre
+NECB2015,Space Function,Dwelling units general
+NECB2015,Space Function,Dwelling units long-term
+NECB2015,Space Function,Electrical/Mechanical room-sch-A
+NECB2015,Space Function,Electrical/Mechanical room-sch-B
+NECB2015,Space Function,Electrical/Mechanical room-sch-C
+NECB2015,Space Function,Electrical/Mechanical room-sch-D
+NECB2015,Space Function,Electrical/Mechanical room-sch-E
+NECB2015,Space Function,Electrical/Mechanical room-sch-F
+NECB2015,Space Function,Electrical/Mechanical room-sch-G
+NECB2015,Space Function,Electrical/Mechanical room-sch-H
+NECB2015,Space Function,Electrical/Mechanical room-sch-I
+NECB2015,Space Function,Electrical/Mechanical room-sch-J
+NECB2015,Space Function,Electrical/Mechanical room-sch-K
+NECB2015,Space Function,Emergency vehicle garage
+NECB2015,Space Function,Fire station sleeping quarters
+NECB2015,Space Function,Food preparation area
+NECB2015,Space Function,Guest room
+NECB2015,Space Function,Gymnasium/Fitness centre exercise area
+NECB2015,Space Function,Gymnasium/Fitness centre playing area
+NECB2015,Space Function,Health care facility exam/treatment room
+NECB2015,Space Function,Health care facility imaging room
+NECB2015,Space Function,Health care facility medical supply room
+NECB2015,Space Function,Health care facility nursery
+NECB2015,Space Function,Health care facility nurses station
+NECB2015,Space Function,Health care facility operating room
+NECB2015,Space Function,Health care facility patient room
+NECB2015,Space Function,Health care facility physical therapy room
+NECB2015,Space Function,Health care facility recovery room
+NECB2015,Space Function,Laboratory - classrooms
+NECB2015,Space Function,Laboratory - other
+NECB2015,Space Function,Laundry/Washing area
+NECB2015,Space Function,Library reading area
+NECB2015,Space Function,Library stacks
+NECB2015,Space Function,Loading dock interior
+NECB2015,Space Function,Lobby - elevator
+NECB2015,Space Function,Lobby - hotel
+NECB2015,Space Function,Lobby - motion picture theatre
+NECB2015,Space Function,Lobby - other
+NECB2015,Space Function,Lobby - performing arts theatre
+NECB2015,Space Function,Lobby - space designed to ANSI/IES RP-28 (used primarily by residents)
+NECB2015,Space Function,Locker room-sch-A
+NECB2015,Space Function,Locker room-sch-B
+NECB2015,Space Function,Locker room-sch-C
+NECB2015,Space Function,Locker room-sch-D
+NECB2015,Space Function,Locker room-sch-E
+NECB2015,Space Function,Locker room-sch-F
+NECB2015,Space Function,Locker room-sch-G
+NECB2015,Space Function,Locker room-sch-H
+NECB2015,Space Function,Locker room-sch-I
+NECB2015,Space Function,Locker room-sch-J
+NECB2015,Space Function,Locker room-sch-K
+NECB2015,Space Function,Lounge/Break room - health care facility
+NECB2015,Space Function,Lounge/Break room - other
+NECB2015,Space Function,Manufacturing facility detailed manufacturing area
+NECB2015,Space Function,Manufacturing facility equipment room
+NECB2015,Space Function,Manufacturing facility extra high bay area (> 15 m floor-to-ceiling height)
+NECB2015,Space Function,Manufacturing facility high bay area (7.5 to 15 m floor-to-ceiling height)
+NECB2015,Space Function,Manufacturing facility low bay area (< 7.5 m floor-to-ceiling height)
+NECB2015,Space Function,Museum general exhibition area
+NECB2015,Space Function,Museum restoration room
+NECB2015,Space Function,Office enclosed <= 25 m2
+NECB2015,Space Function,Office enclosed > 25 m2
+NECB2015,Space Function,Office open plan
+NECB2015,Space Function,Pharmacy area
+NECB2015,Space Function,Post office sorting area
+NECB2015,Space Function,Religious building fellowship hall
+NECB2015,Space Function,Religious building worship/pulpit/choir area
+NECB2015,Space Function,Retail facility dressing/fitting room
+NECB2015,Space Function,Retail facility mall concourse
+NECB2015,Space Function,Sales area
+NECB2015,Space Function,Seating area general-sch-A
+NECB2015,Space Function,Seating area general-sch-B
+NECB2015,Space Function,Seating area general-sch-C
+NECB2015,Space Function,Seating area general-sch-D
+NECB2015,Space Function,Seating area general-sch-E
+NECB2015,Space Function,Seating area general-sch-F
+NECB2015,Space Function,Seating area general-sch-G
+NECB2015,Space Function,Seating area general-sch-H
+NECB2015,Space Function,Seating area general-sch-I
+NECB2015,Space Function,Seating area general-sch-J
+NECB2015,Space Function,Seating area general-sch-K
+NECB2015,Space Function,Space designed to ANSI/IES RP-28 chapel (used primarily by residents)
+NECB2015,Space Function,Space designed to ANSI/IES RP-28 recreation room (used primarily by residents)
+NECB2015,Space Function,Sports arena playing area class I facility(4)
+NECB2015,Space Function,Sports arena playing area class II facility(4)
+NECB2015,Space Function,Sports arena playing area class III facility(4)
+NECB2015,Space Function,Sports arena playing area class IV facility(4)
+NECB2015,Space Function,Stairway/Stairwell-sch-A
+NECB2015,Space Function,Stairway/Stairwell-sch-B
+NECB2015,Space Function,Stairway/Stairwell-sch-C
+NECB2015,Space Function,Stairway/Stairwell-sch-D
+NECB2015,Space Function,Stairway/Stairwell-sch-E
+NECB2015,Space Function,Stairway/Stairwell-sch-F
+NECB2015,Space Function,Stairway/Stairwell-sch-G
+NECB2015,Space Function,Stairway/Stairwell-sch-H
+NECB2015,Space Function,Stairway/Stairwell-sch-I
+NECB2015,Space Function,Stairway/Stairwell-sch-J
+NECB2015,Space Function,Stairway/Stairwell-sch-K
+NECB2015,Space Function,Storage garage interior
+NECB2015,Space Function,Storage room < 5 m2-sch-A
+NECB2015,Space Function,Storage room < 5 m2-sch-B
+NECB2015,Space Function,Storage room < 5 m2-sch-C
+NECB2015,Space Function,Storage room < 5 m2-sch-D
+NECB2015,Space Function,Storage room < 5 m2-sch-E
+NECB2015,Space Function,Storage room < 5 m2-sch-F
+NECB2015,Space Function,Storage room < 5 m2-sch-G
+NECB2015,Space Function,Storage room < 5 m2-sch-H
+NECB2015,Space Function,Storage room < 5 m2-sch-I
+NECB2015,Space Function,Storage room < 5 m2-sch-J
+NECB2015,Space Function,Storage room < 5 m2-sch-K
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-A
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-B
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-C
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-D
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-E
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-F
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-G
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-H
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-I
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-J
+NECB2015,Space Function,Storage room <= 5 m2 <= 100 m2-sch-K
+NECB2015,Space Function,Storage room > 100 m2-sch-A
+NECB2015,Space Function,Storage room > 100 m2-sch-B
+NECB2015,Space Function,Storage room > 100 m2-sch-C
+NECB2015,Space Function,Storage room > 100 m2-sch-D
+NECB2015,Space Function,Storage room > 100 m2-sch-E
+NECB2015,Space Function,Storage room > 100 m2-sch-F
+NECB2015,Space Function,Storage room > 100 m2-sch-G
+NECB2015,Space Function,Storage room > 100 m2-sch-H
+NECB2015,Space Function,Storage room > 100 m2-sch-I
+NECB2015,Space Function,Storage room > 100 m2-sch-J
+NECB2015,Space Function,Storage room > 100 m2-sch-K
+NECB2015,Space Function,Transportation facility airport concourse
+NECB2015,Space Function,Transportation facility baggage/carousel area
+NECB2015,Space Function,Transportation facility terminal ticket counter
+NECB2015,Space Function,Vehicle maintenance area
+NECB2015,Space Function,Warehouse storage area medium to bulky palletized items
+NECB2015,Space Function,Warehouse storage area small hand-carried items(4)
+NECB2015,Space Function,Washroom - other-sch-A
+NECB2015,Space Function,Washroom - other-sch-B
+NECB2015,Space Function,Washroom - other-sch-C
+NECB2015,Space Function,Washroom - other-sch-D
+NECB2015,Space Function,Washroom - other-sch-E
+NECB2015,Space Function,Washroom - other-sch-F
+NECB2015,Space Function,Washroom - other-sch-G
+NECB2015,Space Function,Washroom - other-sch-H
+NECB2015,Space Function,Washroom - other-sch-I
+NECB2015,Space Function,Washroom - other-sch-J
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-A
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-B
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-C
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-D
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-E
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-F
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-G
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-H
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-I
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-J
+NECB2015,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-K
+NECB2015,Space Function,Washroom other-sch-K
+NECB2015,Space Function,Workshop
+NECB2015,Sports arena,WholeBuilding
+NECB2015,Storage garage,WholeBuilding
+NECB2015,Town hall,WholeBuilding
+NECB2015,Transportation facility,WholeBuilding
+NECB2015,Warehouse,WholeBuilding
+NECB2015,Workshop,WholeBuilding
+NECB2017,Automotive facility,WholeBuilding
+NECB2017,Convention centre,WholeBuilding
+NECB2017,Courthouse,WholeBuilding
+NECB2017,Dining - bar lounge/leisure,WholeBuilding
+NECB2017,Dining - cafeteria/fast food,WholeBuilding
+NECB2017,Dining - family,WholeBuilding
+NECB2017,Dormitory,WholeBuilding
+NECB2017,Exercise centre,WholeBuilding
+NECB2017,Fire station,WholeBuilding
+NECB2017,Gymnasium,WholeBuilding
+NECB2017,Health care clinic,WholeBuilding
+NECB2017,Hospital,WholeBuilding
+NECB2017,Hotel/Motel,WholeBuilding
+NECB2017,Library,WholeBuilding
+NECB2017,Long-term care - dwelling units,WholeBuilding
+NECB2017,Long-term care - other,WholeBuilding
+NECB2017,Manufacturing facility,WholeBuilding
+NECB2017,Motion picture theatre,WholeBuilding
+NECB2017,Multi-unit residential building,WholeBuilding
+NECB2017,Museum,WholeBuilding
+NECB2017,Office,WholeBuilding
+NECB2017,Penitentiary,WholeBuilding
+NECB2017,Performing arts theatre,WholeBuilding
+NECB2017,Police station,WholeBuilding
+NECB2017,Post office,WholeBuilding
+NECB2017,Religious building,WholeBuilding
+NECB2017,Retail area,WholeBuilding
+NECB2017,School/university,WholeBuilding
+NECB2017,Space Function,- undefined -
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-A
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-B
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-C
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-D
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-E
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-F
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-G
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-H
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-I
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-J
+NECB2017,Space Function,Atrium (6 =< height <= 12m)-sch-K
+NECB2017,Space Function,Atrium (height < 6m)-sch-A
+NECB2017,Space Function,Atrium (height < 6m)-sch-B
+NECB2017,Space Function,Atrium (height < 6m)-sch-C
+NECB2017,Space Function,Atrium (height < 6m)-sch-D
+NECB2017,Space Function,Atrium (height < 6m)-sch-E
+NECB2017,Space Function,Atrium (height < 6m)-sch-F
+NECB2017,Space Function,Atrium (height < 6m)-sch-G
+NECB2017,Space Function,Atrium (height < 6m)-sch-H
+NECB2017,Space Function,Atrium (height < 6m)-sch-I
+NECB2017,Space Function,Atrium (height < 6m)-sch-J
+NECB2017,Space Function,Atrium (height < 6m)-sch-K
+NECB2017,Space Function,Atrium (height > 12m)-sch-A
+NECB2017,Space Function,Atrium (height > 12m)-sch-B
+NECB2017,Space Function,Atrium (height > 12m)-sch-C
+NECB2017,Space Function,Atrium (height > 12m)-sch-D
+NECB2017,Space Function,Atrium (height > 12m)-sch-E
+NECB2017,Space Function,Atrium (height > 12m)-sch-F
+NECB2017,Space Function,Atrium (height > 12m)-sch-G
+NECB2017,Space Function,Atrium (height > 12m)-sch-H
+NECB2017,Space Function,Atrium (height > 12m)-sch-I
+NECB2017,Space Function,Atrium (height > 12m)-sch-J
+NECB2017,Space Function,Atrium (height > 12m)-sch-K
+NECB2017,Space Function,Audience seating area permanent - auditorium
+NECB2017,Space Function,Audience seating area permanent - convention centre
+NECB2017,Space Function,Audience seating area permanent - gymnasium
+NECB2017,Space Function,Audience seating area permanent - motion picture theatre
+NECB2017,Space Function,Audience seating area permanent - other-sch-A
+NECB2017,Space Function,Audience seating area permanent - other-sch-B
+NECB2017,Space Function,Audience seating area permanent - other-sch-C
+NECB2017,Space Function,Audience seating area permanent - other-sch-D
+NECB2017,Space Function,Audience seating area permanent - other-sch-E
+NECB2017,Space Function,Audience seating area permanent - other-sch-F
+NECB2017,Space Function,Audience seating area permanent - other-sch-G
+NECB2017,Space Function,Audience seating area permanent - other-sch-H
+NECB2017,Space Function,Audience seating area permanent - other-sch-I
+NECB2017,Space Function,Audience seating area permanent - other-sch-J
+NECB2017,Space Function,Audience seating area permanent - other-sch-K
+NECB2017,Space Function,Audience seating area permanent - penitentiary
+NECB2017,Space Function,Audience seating area permanent - performing arts theatre
+NECB2017,Space Function,Audience seating area permanent - religious building
+NECB2017,Space Function,Audience seating area permanent - sports arena
+NECB2017,Space Function,Banking activity area and offices
+NECB2017,Space Function,Classroom/Lecture hall/Training room - Penitentary
+NECB2017,Space Function,Classroom/Lecture hall/Training room other
+NECB2017,Space Function,Computer/Server room-sch-A
+NECB2017,Space Function,Computer/Server room-sch-B
+NECB2017,Space Function,Computer/Server room-sch-C
+NECB2017,Space Function,Computer/Server room-sch-D
+NECB2017,Space Function,Computer/Server room-sch-E
+NECB2017,Space Function,Computer/Server room-sch-F
+NECB2017,Space Function,Computer/Server room-sch-G
+NECB2017,Space Function,Computer/Server room-sch-H
+NECB2017,Space Function,Computer/Server room-sch-I
+NECB2017,Space Function,Computer/Server room-sch-J
+NECB2017,Space Function,Computer/Server room-sch-K
+NECB2017,Space Function,Conference/Meeting/Multi-purpose room
+NECB2017,Space Function,Confinement cell
+NECB2017,Space Function,Convention centre exhibit space
+NECB2017,Space Function,Copy/Print room
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-A
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-B
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-C
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-D
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-E
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-F
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-G
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-H
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-I
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-J
+NECB2017,Space Function,Corridor/Transition area - hospital-sch-K
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-A
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-B
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-C
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-D
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-E
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-F
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-G
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-H
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-I
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-J
+NECB2017,Space Function,Corridor/Transition area - manufacturing facility-sch-K
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-A
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-B
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-C
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-D
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-E
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-F
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-G
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-H
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-I
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-J
+NECB2017,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-K
+NECB2017,Space Function,Corridor/Transition area other-sch-A
+NECB2017,Space Function,Corridor/Transition area other-sch-B
+NECB2017,Space Function,Corridor/Transition area other-sch-C
+NECB2017,Space Function,Corridor/Transition area other-sch-D
+NECB2017,Space Function,Corridor/Transition area other-sch-E
+NECB2017,Space Function,Corridor/Transition area other-sch-F
+NECB2017,Space Function,Corridor/Transition area other-sch-G
+NECB2017,Space Function,Corridor/Transition area other-sch-H
+NECB2017,Space Function,Corridor/Transition area other-sch-I
+NECB2017,Space Function,Corridor/Transition area other-sch-J
+NECB2017,Space Function,Corridor/Transition area other-sch-K
+NECB2017,Space Function,Courtroom
+NECB2017,Space Function,Dining area - bar lounge/leisure dining
+NECB2017,Space Function,Dining area - cafeteria/fast food dining
+NECB2017,Space Function,Dining area - family dining
+NECB2017,Space Function,Dining area - other
+NECB2017,Space Function,Dining area - penitentiary
+NECB2017,Space Function,Dining area - space designed to ANSI/IES RP-28 (used primarily by residents)
+NECB2017,Space Function,Dormitory living quarters
+NECB2017,Space Function,Dressing/Fitting room - performing arts theatre
+NECB2017,Space Function,Dwelling units general
+NECB2017,Space Function,Dwelling units long-term
+NECB2017,Space Function,Electrical/Mechanical room-sch-A
+NECB2017,Space Function,Electrical/Mechanical room-sch-B
+NECB2017,Space Function,Electrical/Mechanical room-sch-C
+NECB2017,Space Function,Electrical/Mechanical room-sch-D
+NECB2017,Space Function,Electrical/Mechanical room-sch-E
+NECB2017,Space Function,Electrical/Mechanical room-sch-F
+NECB2017,Space Function,Electrical/Mechanical room-sch-G
+NECB2017,Space Function,Electrical/Mechanical room-sch-H
+NECB2017,Space Function,Electrical/Mechanical room-sch-I
+NECB2017,Space Function,Electrical/Mechanical room-sch-J
+NECB2017,Space Function,Electrical/Mechanical room-sch-K
+NECB2017,Space Function,Emergency vehicle garage
+NECB2017,Space Function,Fire station sleeping quarters
+NECB2017,Space Function,Food preparation area
+NECB2017,Space Function,Guest room
+NECB2017,Space Function,Gymnasium/Fitness centre exercise area
+NECB2017,Space Function,Gymnasium/Fitness centre playing area
+NECB2017,Space Function,Health care facility exam/treatment room
+NECB2017,Space Function,Health care facility imaging room
+NECB2017,Space Function,Health care facility medical supply room
+NECB2017,Space Function,Health care facility nursery
+NECB2017,Space Function,Health care facility nurses station
+NECB2017,Space Function,Health care facility operating room
+NECB2017,Space Function,Health care facility patient room
+NECB2017,Space Function,Health care facility physical therapy room
+NECB2017,Space Function,Health care facility recovery room
+NECB2017,Space Function,Laboratory - classrooms
+NECB2017,Space Function,Laboratory - other
+NECB2017,Space Function,Laundry/Washing area
+NECB2017,Space Function,Library reading area
+NECB2017,Space Function,Library stacks
+NECB2017,Space Function,Loading dock interior
+NECB2017,Space Function,Lobby - elevator
+NECB2017,Space Function,Lobby - hotel
+NECB2017,Space Function,Lobby - motion picture theatre
+NECB2017,Space Function,Lobby - other
+NECB2017,Space Function,Lobby - performing arts theatre
+NECB2017,Space Function,Lobby - space designed to ANSI/IES RP-28 (used primarily by residents)
+NECB2017,Space Function,Locker room-sch-A
+NECB2017,Space Function,Locker room-sch-B
+NECB2017,Space Function,Locker room-sch-C
+NECB2017,Space Function,Locker room-sch-D
+NECB2017,Space Function,Locker room-sch-E
+NECB2017,Space Function,Locker room-sch-F
+NECB2017,Space Function,Locker room-sch-G
+NECB2017,Space Function,Locker room-sch-H
+NECB2017,Space Function,Locker room-sch-I
+NECB2017,Space Function,Locker room-sch-J
+NECB2017,Space Function,Locker room-sch-K
+NECB2017,Space Function,Lounge/Break room - health care facility
+NECB2017,Space Function,Lounge/Break room - other
+NECB2017,Space Function,Manufacturing facility detailed manufacturing area
+NECB2017,Space Function,Manufacturing facility equipment room
+NECB2017,Space Function,Manufacturing facility extra high bay area (> 15 m floor-to-ceiling height)
+NECB2017,Space Function,Manufacturing facility high bay area (7.5 to 15 m floor-to-ceiling height)
+NECB2017,Space Function,Manufacturing facility low bay area (< 7.5 m floor-to-ceiling height)
+NECB2017,Space Function,Museum general exhibition area
+NECB2017,Space Function,Museum restoration room
+NECB2017,Space Function,Office enclosed <= 25 m2
+NECB2017,Space Function,Office enclosed > 25 m2
+NECB2017,Space Function,Office open plan
+NECB2017,Space Function,Pharmacy area
+NECB2017,Space Function,Post office sorting area
+NECB2017,Space Function,Religious building fellowship hall
+NECB2017,Space Function,Religious building worship/pulpit/choir area
+NECB2017,Space Function,Retail facility dressing/fitting room
+NECB2017,Space Function,Retail facility mall concourse
+NECB2017,Space Function,Sales area
+NECB2017,Space Function,Seating area general-sch-A
+NECB2017,Space Function,Seating area general-sch-B
+NECB2017,Space Function,Seating area general-sch-C
+NECB2017,Space Function,Seating area general-sch-D
+NECB2017,Space Function,Seating area general-sch-E
+NECB2017,Space Function,Seating area general-sch-F
+NECB2017,Space Function,Seating area general-sch-G
+NECB2017,Space Function,Seating area general-sch-H
+NECB2017,Space Function,Seating area general-sch-I
+NECB2017,Space Function,Seating area general-sch-J
+NECB2017,Space Function,Seating area general-sch-K
+NECB2017,Space Function,Space designed to ANSI/IES RP-28 chapel (used primarily by residents)
+NECB2017,Space Function,Space designed to ANSI/IES RP-28 recreation room (used primarily by residents)
+NECB2017,Space Function,Sports arena playing area class I facility(4)
+NECB2017,Space Function,Sports arena playing area class II facility(4)
+NECB2017,Space Function,Sports arena playing area class III facility(4)
+NECB2017,Space Function,Sports arena playing area class IV facility(4)
+NECB2017,Space Function,Stairway/Stairwell-sch-A
+NECB2017,Space Function,Stairway/Stairwell-sch-B
+NECB2017,Space Function,Stairway/Stairwell-sch-C
+NECB2017,Space Function,Stairway/Stairwell-sch-D
+NECB2017,Space Function,Stairway/Stairwell-sch-E
+NECB2017,Space Function,Stairway/Stairwell-sch-F
+NECB2017,Space Function,Stairway/Stairwell-sch-G
+NECB2017,Space Function,Stairway/Stairwell-sch-H
+NECB2017,Space Function,Stairway/Stairwell-sch-I
+NECB2017,Space Function,Stairway/Stairwell-sch-J
+NECB2017,Space Function,Stairway/Stairwell-sch-K
+NECB2017,Space Function,Storage garage interior
+NECB2017,Space Function,Storage room < 5 m2-sch-A
+NECB2017,Space Function,Storage room < 5 m2-sch-B
+NECB2017,Space Function,Storage room < 5 m2-sch-C
+NECB2017,Space Function,Storage room < 5 m2-sch-D
+NECB2017,Space Function,Storage room < 5 m2-sch-E
+NECB2017,Space Function,Storage room < 5 m2-sch-F
+NECB2017,Space Function,Storage room < 5 m2-sch-G
+NECB2017,Space Function,Storage room < 5 m2-sch-H
+NECB2017,Space Function,Storage room < 5 m2-sch-I
+NECB2017,Space Function,Storage room < 5 m2-sch-J
+NECB2017,Space Function,Storage room < 5 m2-sch-K
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-A
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-B
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-C
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-D
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-E
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-F
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-G
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-H
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-I
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-J
+NECB2017,Space Function,Storage room <= 5 m2 <= 100 m2-sch-K
+NECB2017,Space Function,Storage room > 100 m2-sch-A
+NECB2017,Space Function,Storage room > 100 m2-sch-B
+NECB2017,Space Function,Storage room > 100 m2-sch-C
+NECB2017,Space Function,Storage room > 100 m2-sch-D
+NECB2017,Space Function,Storage room > 100 m2-sch-E
+NECB2017,Space Function,Storage room > 100 m2-sch-F
+NECB2017,Space Function,Storage room > 100 m2-sch-G
+NECB2017,Space Function,Storage room > 100 m2-sch-H
+NECB2017,Space Function,Storage room > 100 m2-sch-I
+NECB2017,Space Function,Storage room > 100 m2-sch-J
+NECB2017,Space Function,Storage room > 100 m2-sch-K
+NECB2017,Space Function,Transportation facility airport concourse
+NECB2017,Space Function,Transportation facility baggage/carousel area
+NECB2017,Space Function,Transportation facility terminal ticket counter
+NECB2017,Space Function,Vehicle maintenance area
+NECB2017,Space Function,Warehouse storage area medium to bulky palletized items
+NECB2017,Space Function,Warehouse storage area small hand-carried items(4)
+NECB2017,Space Function,Washroom - other-sch-A
+NECB2017,Space Function,Washroom - other-sch-B
+NECB2017,Space Function,Washroom - other-sch-C
+NECB2017,Space Function,Washroom - other-sch-D
+NECB2017,Space Function,Washroom - other-sch-E
+NECB2017,Space Function,Washroom - other-sch-F
+NECB2017,Space Function,Washroom - other-sch-G
+NECB2017,Space Function,Washroom - other-sch-H
+NECB2017,Space Function,Washroom - other-sch-I
+NECB2017,Space Function,Washroom - other-sch-J
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-A
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-B
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-C
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-D
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-E
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-F
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-G
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-H
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-I
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-J
+NECB2017,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-K
+NECB2017,Space Function,Washroom other-sch-K
+NECB2017,Space Function,Workshop
+NECB2017,Sports arena,WholeBuilding
+NECB2017,Storage garage,WholeBuilding
+NECB2017,Town hall,WholeBuilding
+NECB2017,Transportation facility,WholeBuilding
+NECB2017,Warehouse,WholeBuilding
+NECB2017,Workshop,WholeBuilding
+NECB2020,Automotive facility,WholeBuilding
+NECB2020,Convention centre,WholeBuilding
+NECB2020,Courthouse,WholeBuilding
+NECB2020,Dining - bar lounge/leisure,WholeBuilding
+NECB2020,Dining - cafeteria/fast food,WholeBuilding
+NECB2020,Dining - family,WholeBuilding
+NECB2020,Dormitory,WholeBuilding
+NECB2020,Exercise centre,WholeBuilding
+NECB2020,Fire station,WholeBuilding
+NECB2020,Gymnasium,WholeBuilding
+NECB2020,Health care clinic,WholeBuilding
+NECB2020,Hospital,WholeBuilding
+NECB2020,Hotel/Motel,WholeBuilding
+NECB2020,Library,WholeBuilding
+NECB2020,Long-term care - dwelling units,WholeBuilding
+NECB2020,Long-term care - other,WholeBuilding
+NECB2020,Manufacturing facility,WholeBuilding
+NECB2020,Motion picture theatre,WholeBuilding
+NECB2020,Multi-unit residential building,WholeBuilding
+NECB2020,Museum,WholeBuilding
+NECB2020,Office,WholeBuilding
+NECB2020,Penitentiary,WholeBuilding
+NECB2020,Performing arts theatre,WholeBuilding
+NECB2020,Police station,WholeBuilding
+NECB2020,Post office,WholeBuilding
+NECB2020,Religious building,WholeBuilding
+NECB2020,Retail area,WholeBuilding
+NECB2020,School/university,WholeBuilding
+NECB2020,Space Function,- undefined -
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-A
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-B
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-C
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-D
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-E
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-F
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-G
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-H
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-I
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-J
+NECB2020,Space Function,Atrium (6 =< height <= 12m)-sch-K
+NECB2020,Space Function,Atrium (height < 6m)-sch-A
+NECB2020,Space Function,Atrium (height < 6m)-sch-B
+NECB2020,Space Function,Atrium (height < 6m)-sch-C
+NECB2020,Space Function,Atrium (height < 6m)-sch-D
+NECB2020,Space Function,Atrium (height < 6m)-sch-E
+NECB2020,Space Function,Atrium (height < 6m)-sch-F
+NECB2020,Space Function,Atrium (height < 6m)-sch-G
+NECB2020,Space Function,Atrium (height < 6m)-sch-H
+NECB2020,Space Function,Atrium (height < 6m)-sch-I
+NECB2020,Space Function,Atrium (height < 6m)-sch-J
+NECB2020,Space Function,Atrium (height < 6m)-sch-K
+NECB2020,Space Function,Atrium (height > 12m)-sch-A
+NECB2020,Space Function,Atrium (height > 12m)-sch-B
+NECB2020,Space Function,Atrium (height > 12m)-sch-C
+NECB2020,Space Function,Atrium (height > 12m)-sch-D
+NECB2020,Space Function,Atrium (height > 12m)-sch-E
+NECB2020,Space Function,Atrium (height > 12m)-sch-F
+NECB2020,Space Function,Atrium (height > 12m)-sch-G
+NECB2020,Space Function,Atrium (height > 12m)-sch-H
+NECB2020,Space Function,Atrium (height > 12m)-sch-I
+NECB2020,Space Function,Atrium (height > 12m)-sch-J
+NECB2020,Space Function,Atrium (height > 12m)-sch-K
+NECB2020,Space Function,Audience seating area permanent - auditorium
+NECB2020,Space Function,Audience seating area permanent - convention centre
+NECB2020,Space Function,Audience seating area permanent - gymnasium
+NECB2020,Space Function,Audience seating area permanent - motion picture theatre
+NECB2020,Space Function,Audience seating area permanent - other-sch-A
+NECB2020,Space Function,Audience seating area permanent - other-sch-B
+NECB2020,Space Function,Audience seating area permanent - other-sch-C
+NECB2020,Space Function,Audience seating area permanent - other-sch-D
+NECB2020,Space Function,Audience seating area permanent - other-sch-E
+NECB2020,Space Function,Audience seating area permanent - other-sch-F
+NECB2020,Space Function,Audience seating area permanent - other-sch-G
+NECB2020,Space Function,Audience seating area permanent - other-sch-H
+NECB2020,Space Function,Audience seating area permanent - other-sch-I
+NECB2020,Space Function,Audience seating area permanent - other-sch-J
+NECB2020,Space Function,Audience seating area permanent - other-sch-K
+NECB2020,Space Function,Audience seating area permanent - penitentiary
+NECB2020,Space Function,Audience seating area permanent - performing arts theatre
+NECB2020,Space Function,Audience seating area permanent - religious building
+NECB2020,Space Function,Audience seating area permanent - sports arena
+NECB2020,Space Function,Banking activity area and offices
+NECB2020,Space Function,Classroom/Lecture hall/Training room - Penitentary
+NECB2020,Space Function,Classroom/Lecture hall/Training room other
+NECB2020,Space Function,Computer/Server room-sch-A
+NECB2020,Space Function,Computer/Server room-sch-B
+NECB2020,Space Function,Computer/Server room-sch-C
+NECB2020,Space Function,Computer/Server room-sch-D
+NECB2020,Space Function,Computer/Server room-sch-E
+NECB2020,Space Function,Computer/Server room-sch-F
+NECB2020,Space Function,Computer/Server room-sch-G
+NECB2020,Space Function,Computer/Server room-sch-H
+NECB2020,Space Function,Computer/Server room-sch-I
+NECB2020,Space Function,Computer/Server room-sch-J
+NECB2020,Space Function,Computer/Server room-sch-K
+NECB2020,Space Function,Conference/Meeting/Multi-purpose room
+NECB2020,Space Function,Confinement cell
+NECB2020,Space Function,Convention centre exhibit space
+NECB2020,Space Function,Copy/Print room
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-A
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-B
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-C
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-D
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-E
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-F
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-G
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-H
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-I
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-J
+NECB2020,Space Function,Corridor/Transition area - hospital-sch-K
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-A
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-B
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-C
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-D
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-E
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-F
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-G
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-H
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-I
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-J
+NECB2020,Space Function,Corridor/Transition area - manufacturing facility-sch-K
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-A
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-B
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-C
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-D
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-E
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-F
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-G
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-H
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-I
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-J
+NECB2020,Space Function,Corridor/Transition area - space designed to ANSI/IES RP-28 (and used primarily by residents)-sch-K
+NECB2020,Space Function,Corridor/Transition area other-sch-A
+NECB2020,Space Function,Corridor/Transition area other-sch-B
+NECB2020,Space Function,Corridor/Transition area other-sch-C
+NECB2020,Space Function,Corridor/Transition area other-sch-D
+NECB2020,Space Function,Corridor/Transition area other-sch-E
+NECB2020,Space Function,Corridor/Transition area other-sch-F
+NECB2020,Space Function,Corridor/Transition area other-sch-G
+NECB2020,Space Function,Corridor/Transition area other-sch-H
+NECB2020,Space Function,Corridor/Transition area other-sch-I
+NECB2020,Space Function,Corridor/Transition area other-sch-J
+NECB2020,Space Function,Corridor/Transition area other-sch-K
+NECB2020,Space Function,Courtroom
+NECB2020,Space Function,Dining area - bar lounge/leisure dining
+NECB2020,Space Function,Dining area - cafeteria/fast food dining
+NECB2020,Space Function,Dining area - family dining
+NECB2020,Space Function,Dining area - other
+NECB2020,Space Function,Dining area - penitentiary
+NECB2020,Space Function,Dining area - space designed to ANSI/IES RP-28 (used primarily by residents)
+NECB2020,Space Function,Dormitory living quarters
+NECB2020,Space Function,Dressing/Fitting room - performing arts theatre
+NECB2020,Space Function,Dwelling units general
+NECB2020,Space Function,Dwelling units long-term
+NECB2020,Space Function,Electrical/Mechanical room-sch-A
+NECB2020,Space Function,Electrical/Mechanical room-sch-B
+NECB2020,Space Function,Electrical/Mechanical room-sch-C
+NECB2020,Space Function,Electrical/Mechanical room-sch-D
+NECB2020,Space Function,Electrical/Mechanical room-sch-E
+NECB2020,Space Function,Electrical/Mechanical room-sch-F
+NECB2020,Space Function,Electrical/Mechanical room-sch-G
+NECB2020,Space Function,Electrical/Mechanical room-sch-H
+NECB2020,Space Function,Electrical/Mechanical room-sch-I
+NECB2020,Space Function,Electrical/Mechanical room-sch-J
+NECB2020,Space Function,Electrical/Mechanical room-sch-K
+NECB2020,Space Function,Emergency vehicle garage
+NECB2020,Space Function,Fire station sleeping quarters
+NECB2020,Space Function,Food preparation area
+NECB2020,Space Function,Guest room
+NECB2020,Space Function,Gymnasium/Fitness centre exercise area
+NECB2020,Space Function,Gymnasium/Fitness centre playing area
+NECB2020,Space Function,Health care facility exam/treatment room
+NECB2020,Space Function,Health care facility imaging room
+NECB2020,Space Function,Health care facility medical supply room
+NECB2020,Space Function,Health care facility nursery
+NECB2020,Space Function,Health care facility nurses station
+NECB2020,Space Function,Health care facility operating room
+NECB2020,Space Function,Health care facility patient room
+NECB2020,Space Function,Health care facility physical therapy room
+NECB2020,Space Function,Health care facility recovery room
+NECB2020,Space Function,Laboratory - classrooms
+NECB2020,Space Function,Laboratory - other
+NECB2020,Space Function,Laundry/Washing area
+NECB2020,Space Function,Library reading area
+NECB2020,Space Function,Library stacks
+NECB2020,Space Function,Loading dock interior
+NECB2020,Space Function,Lobby - elevator
+NECB2020,Space Function,Lobby - hotel
+NECB2020,Space Function,Lobby - motion picture theatre
+NECB2020,Space Function,Lobby - other
+NECB2020,Space Function,Lobby - performing arts theatre
+NECB2020,Space Function,Lobby - space designed to ANSI/IES RP-28 (used primarily by residents)
+NECB2020,Space Function,Locker room-sch-A
+NECB2020,Space Function,Locker room-sch-B
+NECB2020,Space Function,Locker room-sch-C
+NECB2020,Space Function,Locker room-sch-D
+NECB2020,Space Function,Locker room-sch-E
+NECB2020,Space Function,Locker room-sch-F
+NECB2020,Space Function,Locker room-sch-G
+NECB2020,Space Function,Locker room-sch-H
+NECB2020,Space Function,Locker room-sch-I
+NECB2020,Space Function,Locker room-sch-J
+NECB2020,Space Function,Locker room-sch-K
+NECB2020,Space Function,Lounge/Break room - health care facility
+NECB2020,Space Function,Lounge/Break room - other
+NECB2020,Space Function,Manufacturing facility detailed manufacturing area
+NECB2020,Space Function,Manufacturing facility equipment room
+NECB2020,Space Function,Manufacturing facility extra high bay area (> 15 m floor-to-ceiling height)
+NECB2020,Space Function,Manufacturing facility high bay area (7.5 to 15 m floor-to-ceiling height)
+NECB2020,Space Function,Manufacturing facility low bay area (< 7.5 m floor-to-ceiling height)
+NECB2020,Space Function,Museum general exhibition area
+NECB2020,Space Function,Museum restoration room
+NECB2020,Space Function,Office enclosed <= 25 m2
+NECB2020,Space Function,Office enclosed > 25 m2
+NECB2020,Space Function,Office open plan
+NECB2020,Space Function,Pharmacy area
+NECB2020,Space Function,Post office sorting area
+NECB2020,Space Function,Religious building fellowship hall
+NECB2020,Space Function,Religious building worship/pulpit/choir area
+NECB2020,Space Function,Retail facility dressing/fitting room
+NECB2020,Space Function,Retail facility mall concourse
+NECB2020,Space Function,Sales area
+NECB2020,Space Function,Seating area general-sch-A
+NECB2020,Space Function,Seating area general-sch-B
+NECB2020,Space Function,Seating area general-sch-C
+NECB2020,Space Function,Seating area general-sch-D
+NECB2020,Space Function,Seating area general-sch-E
+NECB2020,Space Function,Seating area general-sch-F
+NECB2020,Space Function,Seating area general-sch-G
+NECB2020,Space Function,Seating area general-sch-H
+NECB2020,Space Function,Seating area general-sch-I
+NECB2020,Space Function,Seating area general-sch-J
+NECB2020,Space Function,Seating area general-sch-K
+NECB2020,Space Function,Space designed to ANSI/IES RP-28 chapel (used primarily by residents)
+NECB2020,Space Function,Space designed to ANSI/IES RP-28 recreation room (used primarily by residents)
+NECB2020,Space Function,Sports arena playing area class I facility(4)
+NECB2020,Space Function,Sports arena playing area class II facility(4)
+NECB2020,Space Function,Sports arena playing area class III facility(4)
+NECB2020,Space Function,Sports arena playing area class IV facility(4)
+NECB2020,Space Function,Stairway/Stairwell-sch-A
+NECB2020,Space Function,Stairway/Stairwell-sch-B
+NECB2020,Space Function,Stairway/Stairwell-sch-C
+NECB2020,Space Function,Stairway/Stairwell-sch-D
+NECB2020,Space Function,Stairway/Stairwell-sch-E
+NECB2020,Space Function,Stairway/Stairwell-sch-F
+NECB2020,Space Function,Stairway/Stairwell-sch-G
+NECB2020,Space Function,Stairway/Stairwell-sch-H
+NECB2020,Space Function,Stairway/Stairwell-sch-I
+NECB2020,Space Function,Stairway/Stairwell-sch-J
+NECB2020,Space Function,Stairway/Stairwell-sch-K
+NECB2020,Space Function,Storage garage interior
+NECB2020,Space Function,Storage room < 5 m2-sch-A
+NECB2020,Space Function,Storage room < 5 m2-sch-B
+NECB2020,Space Function,Storage room < 5 m2-sch-C
+NECB2020,Space Function,Storage room < 5 m2-sch-D
+NECB2020,Space Function,Storage room < 5 m2-sch-E
+NECB2020,Space Function,Storage room < 5 m2-sch-F
+NECB2020,Space Function,Storage room < 5 m2-sch-G
+NECB2020,Space Function,Storage room < 5 m2-sch-H
+NECB2020,Space Function,Storage room < 5 m2-sch-I
+NECB2020,Space Function,Storage room < 5 m2-sch-J
+NECB2020,Space Function,Storage room < 5 m2-sch-K
+NECB2020,Space Function,Storage room >= 5 m2-sch-A
+NECB2020,Space Function,Storage room >= 5 m2-sch-B
+NECB2020,Space Function,Storage room >= 5 m2-sch-C
+NECB2020,Space Function,Storage room >= 5 m2-sch-D
+NECB2020,Space Function,Storage room >= 5 m2-sch-E
+NECB2020,Space Function,Storage room >= 5 m2-sch-F
+NECB2020,Space Function,Storage room >= 5 m2-sch-G
+NECB2020,Space Function,Storage room >= 5 m2-sch-H
+NECB2020,Space Function,Storage room >= 5 m2-sch-I
+NECB2020,Space Function,Storage room >= 5 m2-sch-J
+NECB2020,Space Function,Storage room >= 5 m2-sch-K
+NECB2020,Space Function,Transportation facility airport concourse
+NECB2020,Space Function,Transportation facility baggage/carousel area
+NECB2020,Space Function,Transportation facility terminal ticket counter
+NECB2020,Space Function,Vehicle maintenance area
+NECB2020,Space Function,Warehouse storage area medium to bulky palletized items
+NECB2020,Space Function,Warehouse storage area small hand-carried items(4)
+NECB2020,Space Function,Washroom - other-sch-A
+NECB2020,Space Function,Washroom - other-sch-B
+NECB2020,Space Function,Washroom - other-sch-C
+NECB2020,Space Function,Washroom - other-sch-D
+NECB2020,Space Function,Washroom - other-sch-E
+NECB2020,Space Function,Washroom - other-sch-F
+NECB2020,Space Function,Washroom - other-sch-G
+NECB2020,Space Function,Washroom - other-sch-H
+NECB2020,Space Function,Washroom - other-sch-I
+NECB2020,Space Function,Washroom - other-sch-J
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-A
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-B
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-C
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-D
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-E
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-F
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-G
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-H
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-I
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-J
+NECB2020,Space Function,Washroom - space designed to ANSI/IES RP-28 (used primarily by residents)-sch-K
+NECB2020,Space Function,Washroom other-sch-K
+NECB2020,Space Function,Workshop
+NECB2020,Sports arena,WholeBuilding
+NECB2020,Storage garage,WholeBuilding
+NECB2020,Town hall,WholeBuilding
+NECB2020,Transportation facility,WholeBuilding
+NECB2020,Warehouse,WholeBuilding
+NECB2020,Workshop,WholeBuilding
+BTAPPRE1980,Automotive facility,WholeBuilding
+BTAPPRE1980,Convention centre,WholeBuilding
+BTAPPRE1980,Courthouse,WholeBuilding
+BTAPPRE1980,Dining - bar/lounge,WholeBuilding
+BTAPPRE1980,Dining - cafeteria,WholeBuilding
+BTAPPRE1980,Dining - family,WholeBuilding
+BTAPPRE1980,Dormitory,WholeBuilding
+BTAPPRE1980,Exercise centre,WholeBuilding
+BTAPPRE1980,Fire station,WholeBuilding
+BTAPPRE1980,Gymnasium,WholeBuilding
+BTAPPRE1980,Health-care clinic,WholeBuilding
+BTAPPRE1980,Hospital,WholeBuilding
+BTAPPRE1980,Hotel,WholeBuilding
+BTAPPRE1980,Library,WholeBuilding
+BTAPPRE1980,Manufacturing facility,WholeBuilding
+BTAPPRE1980,Motel,WholeBuilding
+BTAPPRE1980,Motion picture theatre,WholeBuilding
+BTAPPRE1980,Multi-unit residential,WholeBuilding
+BTAPPRE1980,Museum,WholeBuilding
+BTAPPRE1980,Office,WholeBuilding
+BTAPPRE1980,Parking garage,WholeBuilding
+BTAPPRE1980,Penitentiary,WholeBuilding
+BTAPPRE1980,Performing arts theatre,WholeBuilding
+BTAPPRE1980,Police station,WholeBuilding
+BTAPPRE1980,Post office,WholeBuilding
+BTAPPRE1980,Religious,WholeBuilding
+BTAPPRE1980,Retail,WholeBuilding
+BTAPPRE1980,School/university,WholeBuilding
+BTAPPRE1980,Space Function,- undefined -
+BTAPPRE1980,Space Function,Atrium - H < 13m
+BTAPPRE1980,Space Function,Atrium - H > 13m
+BTAPPRE1980,Space Function,Audience - auditorium
+BTAPPRE1980,Space Function,Audience - motion picture
+BTAPPRE1980,Space Function,Audience - performance arts
+BTAPPRE1980,Space Function,Automotive - repair
+BTAPPRE1980,Space Function,Bank - banking and offices
+BTAPPRE1980,Space Function,Classroom/lecture/training
+BTAPPRE1980,Space Function,Conf./meet./multi-purpose
+BTAPPRE1980,Space Function,Convention centre - audience
+BTAPPRE1980,Space Function,Convention centre - exhibit
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-A
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-B
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-C
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-D
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-E
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-F
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-G
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-H
+BTAPPRE1980,Space Function,Corr. < 2.4m wide-sch-I
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-A
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-B
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-C
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-D
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-E
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-F
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-G
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-H
+BTAPPRE1980,Space Function,Corr. >= 2.4m wide-sch-I
+BTAPPRE1980,Space Function,Courthouse - cell
+BTAPPRE1980,Space Function,Courthouse - chambers
+BTAPPRE1980,Space Function,Courthouse - courtroom
+BTAPPRE1980,Space Function,Dining - bar lounge/leisure
+BTAPPRE1980,Space Function,Dining - family space
+BTAPPRE1980,Space Function,Dining - other
+BTAPPRE1980,Space Function,Dormitory - living quarters
+BTAPPRE1980,Space Function,Dress./fitt. - performance arts
+BTAPPRE1980,Space Function,Dwelling Unit(s)
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-A
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-B
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-C
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-D
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-E
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-F
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-G
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-H
+BTAPPRE1980,Space Function,Electrical/Mechanical-sch-I
+BTAPPRE1980,Space Function,Fire station - engine room
+BTAPPRE1980,Space Function,Fire station - quarters
+BTAPPRE1980,Space Function,Food preparation
+BTAPPRE1980,Space Function,Food preparation - vented
+BTAPPRE1980,Space Function,Gym - audience
+BTAPPRE1980,Space Function,Gym - fitness
+BTAPPRE1980,Space Function,Gym - play
+BTAPPRE1980,Space Function,Hospital - emergency
+BTAPPRE1980,Space Function,Hospital - exam
+BTAPPRE1980,Space Function,Hospital - laundry/washing
+BTAPPRE1980,Space Function,Hospital - lounge/recreation
+BTAPPRE1980,Space Function,Hospital - medical supply
+BTAPPRE1980,Space Function,Hospital - medical supply - occsens
+BTAPPRE1980,Space Function,Hospital - nursery
+BTAPPRE1980,Space Function,Hospital - nurses station
+BTAPPRE1980,Space Function,Hospital - operating room
+BTAPPRE1980,Space Function,Hospital - patient room
+BTAPPRE1980,Space Function,Hospital - pharmacy
+BTAPPRE1980,Space Function,Hospital - physical therapy
+BTAPPRE1980,Space Function,Hospital - radiology/imaging
+BTAPPRE1980,Space Function,Hospital - recovery
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-A
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-B
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-C
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-D
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-E
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-F
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-G
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-H
+BTAPPRE1980,Space Function,Hospital corr. < 2.4m-sch-I
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-A
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-B
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-C
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-D
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-E
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-F
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-G
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-H
+BTAPPRE1980,Space Function,Hospital corr. >= 2.4m-sch-I
+BTAPPRE1980,Space Function,Hotel/Motel - dining
+BTAPPRE1980,Space Function,Hotel/Motel - lobby
+BTAPPRE1980,Space Function,Hotel/Motel - rooms
+BTAPPRE1980,Space Function,Hway lodging - dining
+BTAPPRE1980,Space Function,Hway lodging - rooms
+BTAPPRE1980,Space Function,Lab - classrooms
+BTAPPRE1980,Space Function,Lab - research
+BTAPPRE1980,Space Function,Library - cataloging
+BTAPPRE1980,Space Function,Library - reading
+BTAPPRE1980,Space Function,Library - stacks
+BTAPPRE1980,Space Function,Lobby - elevator
+BTAPPRE1980,Space Function,Lobby - motion picture
+BTAPPRE1980,Space Function,Lobby - other
+BTAPPRE1980,Space Function,Lobby - performance arts
+BTAPPRE1980,Space Function,Locker room-sch-A
+BTAPPRE1980,Space Function,Locker room-sch-B
+BTAPPRE1980,Space Function,Locker room-sch-C
+BTAPPRE1980,Space Function,Locker room-sch-D
+BTAPPRE1980,Space Function,Locker room-sch-E
+BTAPPRE1980,Space Function,Locker room-sch-F
+BTAPPRE1980,Space Function,Locker room-sch-G
+BTAPPRE1980,Space Function,Locker room-sch-H
+BTAPPRE1980,Space Function,Locker room-sch-I
+BTAPPRE1980,Space Function,Lounge/recreation
+BTAPPRE1980,Space Function,Mfg - 7.5 <= bay H <= 15m
+BTAPPRE1980,Space Function,Mfg - bay H < 7.5m
+BTAPPRE1980,Space Function,Mfg - bay H > 15m
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-A
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-B
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-C
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-D
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-E
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-F
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-G
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-H
+BTAPPRE1980,Space Function,Mfg - corr. < 2.4m-sch-I
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-A
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-B
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-C
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-D
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-E
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-F
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-G
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-H
+BTAPPRE1980,Space Function,Mfg - corr. >= 2.4m-sch-I
+BTAPPRE1980,Space Function,Mfg - detailed
+BTAPPRE1980,Space Function,Mfg - equipment
+BTAPPRE1980,Space Function,Museum - exhibition
+BTAPPRE1980,Space Function,Museum - restoration
+BTAPPRE1980,Space Function,Office - enclosed
+BTAPPRE1980,Space Function,Office - enclosed - occsens
+BTAPPRE1980,Space Function,Office - open plan
+BTAPPRE1980,Space Function,Parking garage space
+BTAPPRE1980,Space Function,Penitentiary - audience
+BTAPPRE1980,Space Function,Penitentiary - classroom
+BTAPPRE1980,Space Function,Penitentiary - dining
+BTAPPRE1980,Space Function,Post office sorting
+BTAPPRE1980,Space Function,Religious - audience
+BTAPPRE1980,Space Function,Religious - fellowship hall
+BTAPPRE1980,Space Function,Religious - pulpit/choir
+BTAPPRE1980,Space Function,Retail - dressing/fitting
+BTAPPRE1980,Space Function,Retail - mall concourse
+BTAPPRE1980,Space Function,Retail - sales
+BTAPPRE1980,Space Function,Sales area
+BTAPPRE1980,Space Function,Sports arena - audience
+BTAPPRE1980,Space Function,Sports arena - court c1
+BTAPPRE1980,Space Function,Sports arena - court c2
+BTAPPRE1980,Space Function,Sports arena - court c3
+BTAPPRE1980,Space Function,Sports arena - court c4
+BTAPPRE1980,Space Function,Sports arena - ring
+BTAPPRE1980,Space Function,Stairway-sch-A
+BTAPPRE1980,Space Function,Stairway-sch-B
+BTAPPRE1980,Space Function,Stairway-sch-C
+BTAPPRE1980,Space Function,Stairway-sch-D
+BTAPPRE1980,Space Function,Stairway-sch-E
+BTAPPRE1980,Space Function,Stairway-sch-F
+BTAPPRE1980,Space Function,Stairway-sch-G
+BTAPPRE1980,Space Function,Stairway-sch-H
+BTAPPRE1980,Space Function,Stairway-sch-I
+BTAPPRE1980,Space Function,Storage area
+BTAPPRE1980,Space Function,Storage area - occsens
+BTAPPRE1980,Space Function,Storage area - refrigerated
+BTAPPRE1980,Space Function,Storage area - refrigerated - occsens
+BTAPPRE1980,Space Function,Transp. baggage
+BTAPPRE1980,Space Function,Transp. concourse
+BTAPPRE1980,Space Function,Transp. counter
+BTAPPRE1980,Space Function,Transp. seating
+BTAPPRE1980,Space Function,Warehouse - fine
+BTAPPRE1980,Space Function,Warehouse - fine - refrigerated
+BTAPPRE1980,Space Function,Warehouse - med/blk
+BTAPPRE1980,Space Function,Warehouse - med/blk - refrigerated
+BTAPPRE1980,Space Function,Warehouse - med/blk2
+BTAPPRE1980,Space Function,Warehouse - med/blk2 - refrigerated
+BTAPPRE1980,Space Function,Washroom-sch-A
+BTAPPRE1980,Space Function,Washroom-sch-B
+BTAPPRE1980,Space Function,Washroom-sch-C
+BTAPPRE1980,Space Function,Washroom-sch-D
+BTAPPRE1980,Space Function,Washroom-sch-E
+BTAPPRE1980,Space Function,Washroom-sch-F
+BTAPPRE1980,Space Function,Washroom-sch-G
+BTAPPRE1980,Space Function,Washroom-sch-H
+BTAPPRE1980,Space Function,Washroom-sch-I
+BTAPPRE1980,Space Function,Workshop space
+BTAPPRE1980,Sports arena,WholeBuilding
+BTAPPRE1980,Town hall,WholeBuilding
+BTAPPRE1980,Transportation,WholeBuilding
+BTAPPRE1980,Warehouse,WholeBuilding
+BTAPPRE1980,Warehouse - refrigerated,WholeBuilding
+BTAPPRE1980,Workshop,WholeBuilding
+BTAP1980TO2010,Automotive facility,WholeBuilding
+BTAP1980TO2010,Convention centre,WholeBuilding
+BTAP1980TO2010,Courthouse,WholeBuilding
+BTAP1980TO2010,Dining - bar/lounge,WholeBuilding
+BTAP1980TO2010,Dining - cafeteria,WholeBuilding
+BTAP1980TO2010,Dining - family,WholeBuilding
+BTAP1980TO2010,Dormitory,WholeBuilding
+BTAP1980TO2010,Exercise centre,WholeBuilding
+BTAP1980TO2010,Fire station,WholeBuilding
+BTAP1980TO2010,Gymnasium,WholeBuilding
+BTAP1980TO2010,Health-care clinic,WholeBuilding
+BTAP1980TO2010,Hospital,WholeBuilding
+BTAP1980TO2010,Hotel,WholeBuilding
+BTAP1980TO2010,Library,WholeBuilding
+BTAP1980TO2010,Manufacturing facility,WholeBuilding
+BTAP1980TO2010,Motel,WholeBuilding
+BTAP1980TO2010,Motion picture theatre,WholeBuilding
+BTAP1980TO2010,Multi-unit residential,WholeBuilding
+BTAP1980TO2010,Museum,WholeBuilding
+BTAP1980TO2010,Office,WholeBuilding
+BTAP1980TO2010,Parking garage,WholeBuilding
+BTAP1980TO2010,Penitentiary,WholeBuilding
+BTAP1980TO2010,Performing arts theatre,WholeBuilding
+BTAP1980TO2010,Police station,WholeBuilding
+BTAP1980TO2010,Post office,WholeBuilding
+BTAP1980TO2010,Religious,WholeBuilding
+BTAP1980TO2010,Retail,WholeBuilding
+BTAP1980TO2010,School/university,WholeBuilding
+BTAP1980TO2010,Space Function,- undefined -
+BTAP1980TO2010,Space Function,Atrium - H < 13m
+BTAP1980TO2010,Space Function,Atrium - H > 13m
+BTAP1980TO2010,Space Function,Audience - auditorium
+BTAP1980TO2010,Space Function,Audience - motion picture
+BTAP1980TO2010,Space Function,Audience - performance arts
+BTAP1980TO2010,Space Function,Automotive - repair
+BTAP1980TO2010,Space Function,Bank - banking and offices
+BTAP1980TO2010,Space Function,Classroom/lecture/training
+BTAP1980TO2010,Space Function,Conf./meet./multi-purpose
+BTAP1980TO2010,Space Function,Convention centre - audience
+BTAP1980TO2010,Space Function,Convention centre - exhibit
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-A
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-B
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-C
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-D
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-E
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-F
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-G
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-H
+BTAP1980TO2010,Space Function,Corr. < 2.4m wide-sch-I
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-A
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-B
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-C
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-D
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-E
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-F
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-G
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-H
+BTAP1980TO2010,Space Function,Corr. >= 2.4m wide-sch-I
+BTAP1980TO2010,Space Function,Courthouse - cell
+BTAP1980TO2010,Space Function,Courthouse - chambers
+BTAP1980TO2010,Space Function,Courthouse - courtroom
+BTAP1980TO2010,Space Function,Dining - bar lounge/leisure
+BTAP1980TO2010,Space Function,Dining - family space
+BTAP1980TO2010,Space Function,Dining - other
+BTAP1980TO2010,Space Function,Dormitory - living quarters
+BTAP1980TO2010,Space Function,Dress./fitt. - performance arts
+BTAP1980TO2010,Space Function,Dwelling Unit(s)
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-A
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-B
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-C
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-D
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-E
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-F
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-G
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-H
+BTAP1980TO2010,Space Function,Electrical/Mechanical-sch-I
+BTAP1980TO2010,Space Function,Fire station - engine room
+BTAP1980TO2010,Space Function,Fire station - quarters
+BTAP1980TO2010,Space Function,Food preparation
+BTAP1980TO2010,Space Function,Food preparation - vented
+BTAP1980TO2010,Space Function,Gym - audience
+BTAP1980TO2010,Space Function,Gym - fitness
+BTAP1980TO2010,Space Function,Gym - play
+BTAP1980TO2010,Space Function,Hospital - emergency
+BTAP1980TO2010,Space Function,Hospital - exam
+BTAP1980TO2010,Space Function,Hospital - laundry/washing
+BTAP1980TO2010,Space Function,Hospital - lounge/recreation
+BTAP1980TO2010,Space Function,Hospital - medical supply
+BTAP1980TO2010,Space Function,Hospital - medical supply - occsens
+BTAP1980TO2010,Space Function,Hospital - nursery
+BTAP1980TO2010,Space Function,Hospital - nurses station
+BTAP1980TO2010,Space Function,Hospital - operating room
+BTAP1980TO2010,Space Function,Hospital - patient room
+BTAP1980TO2010,Space Function,Hospital - pharmacy
+BTAP1980TO2010,Space Function,Hospital - physical therapy
+BTAP1980TO2010,Space Function,Hospital - radiology/imaging
+BTAP1980TO2010,Space Function,Hospital - recovery
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-A
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-B
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-C
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-D
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-E
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-F
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-G
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-H
+BTAP1980TO2010,Space Function,Hospital corr. < 2.4m-sch-I
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-A
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-B
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-C
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-D
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-E
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-F
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-G
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-H
+BTAP1980TO2010,Space Function,Hospital corr. >= 2.4m-sch-I
+BTAP1980TO2010,Space Function,Hotel/Motel - dining
+BTAP1980TO2010,Space Function,Hotel/Motel - lobby
+BTAP1980TO2010,Space Function,Hotel/Motel - rooms
+BTAP1980TO2010,Space Function,Hway lodging - dining
+BTAP1980TO2010,Space Function,Hway lodging - rooms
+BTAP1980TO2010,Space Function,Lab - classrooms
+BTAP1980TO2010,Space Function,Lab - research
+BTAP1980TO2010,Space Function,Library - cataloging
+BTAP1980TO2010,Space Function,Library - reading
+BTAP1980TO2010,Space Function,Library - stacks
+BTAP1980TO2010,Space Function,Lobby - elevator
+BTAP1980TO2010,Space Function,Lobby - motion picture
+BTAP1980TO2010,Space Function,Lobby - other
+BTAP1980TO2010,Space Function,Lobby - performance arts
+BTAP1980TO2010,Space Function,Locker room-sch-A
+BTAP1980TO2010,Space Function,Locker room-sch-B
+BTAP1980TO2010,Space Function,Locker room-sch-C
+BTAP1980TO2010,Space Function,Locker room-sch-D
+BTAP1980TO2010,Space Function,Locker room-sch-E
+BTAP1980TO2010,Space Function,Locker room-sch-F
+BTAP1980TO2010,Space Function,Locker room-sch-G
+BTAP1980TO2010,Space Function,Locker room-sch-H
+BTAP1980TO2010,Space Function,Locker room-sch-I
+BTAP1980TO2010,Space Function,Lounge/recreation
+BTAP1980TO2010,Space Function,Mfg - 7.5 <= bay H <= 15m
+BTAP1980TO2010,Space Function,Mfg - bay H < 7.5m
+BTAP1980TO2010,Space Function,Mfg - bay H > 15m
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-A
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-B
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-C
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-D
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-E
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-F
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-G
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-H
+BTAP1980TO2010,Space Function,Mfg - corr. < 2.4m-sch-I
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-A
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-B
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-C
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-D
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-E
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-F
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-G
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-H
+BTAP1980TO2010,Space Function,Mfg - corr. >= 2.4m-sch-I
+BTAP1980TO2010,Space Function,Mfg - detailed
+BTAP1980TO2010,Space Function,Mfg - equipment
+BTAP1980TO2010,Space Function,Museum - exhibition
+BTAP1980TO2010,Space Function,Museum - restoration
+BTAP1980TO2010,Space Function,Office - enclosed
+BTAP1980TO2010,Space Function,Office - enclosed - occsens
+BTAP1980TO2010,Space Function,Office - open plan
+BTAP1980TO2010,Space Function,Parking garage space
+BTAP1980TO2010,Space Function,Penitentiary - audience
+BTAP1980TO2010,Space Function,Penitentiary - classroom
+BTAP1980TO2010,Space Function,Penitentiary - dining
+BTAP1980TO2010,Space Function,Post office sorting
+BTAP1980TO2010,Space Function,Religious - audience
+BTAP1980TO2010,Space Function,Religious - fellowship hall
+BTAP1980TO2010,Space Function,Religious - pulpit/choir
+BTAP1980TO2010,Space Function,Retail - dressing/fitting
+BTAP1980TO2010,Space Function,Retail - mall concourse
+BTAP1980TO2010,Space Function,Retail - sales
+BTAP1980TO2010,Space Function,Sales area
+BTAP1980TO2010,Space Function,Sports arena - audience
+BTAP1980TO2010,Space Function,Sports arena - court c1
+BTAP1980TO2010,Space Function,Sports arena - court c2
+BTAP1980TO2010,Space Function,Sports arena - court c3
+BTAP1980TO2010,Space Function,Sports arena - court c4
+BTAP1980TO2010,Space Function,Sports arena - ring
+BTAP1980TO2010,Space Function,Stairway-sch-A
+BTAP1980TO2010,Space Function,Stairway-sch-B
+BTAP1980TO2010,Space Function,Stairway-sch-C
+BTAP1980TO2010,Space Function,Stairway-sch-D
+BTAP1980TO2010,Space Function,Stairway-sch-E
+BTAP1980TO2010,Space Function,Stairway-sch-F
+BTAP1980TO2010,Space Function,Stairway-sch-G
+BTAP1980TO2010,Space Function,Stairway-sch-H
+BTAP1980TO2010,Space Function,Stairway-sch-I
+BTAP1980TO2010,Space Function,Storage area
+BTAP1980TO2010,Space Function,Storage area - occsens
+BTAP1980TO2010,Space Function,Storage area - refrigerated
+BTAP1980TO2010,Space Function,Storage area - refrigerated - occsens
+BTAP1980TO2010,Space Function,Transp. baggage
+BTAP1980TO2010,Space Function,Transp. concourse
+BTAP1980TO2010,Space Function,Transp. counter
+BTAP1980TO2010,Space Function,Transp. seating
+BTAP1980TO2010,Space Function,Warehouse - fine
+BTAP1980TO2010,Space Function,Warehouse - fine - refrigerated
+BTAP1980TO2010,Space Function,Warehouse - med/blk
+BTAP1980TO2010,Space Function,Warehouse - med/blk - refrigerated
+BTAP1980TO2010,Space Function,Warehouse - med/blk2
+BTAP1980TO2010,Space Function,Warehouse - med/blk2 - refrigerated
+BTAP1980TO2010,Space Function,Washroom-sch-A
+BTAP1980TO2010,Space Function,Washroom-sch-B
+BTAP1980TO2010,Space Function,Washroom-sch-C
+BTAP1980TO2010,Space Function,Washroom-sch-D
+BTAP1980TO2010,Space Function,Washroom-sch-E
+BTAP1980TO2010,Space Function,Washroom-sch-F
+BTAP1980TO2010,Space Function,Washroom-sch-G
+BTAP1980TO2010,Space Function,Washroom-sch-H
+BTAP1980TO2010,Space Function,Washroom-sch-I
+BTAP1980TO2010,Space Function,Workshop space
+BTAP1980TO2010,Sports arena,WholeBuilding
+BTAP1980TO2010,Town hall,WholeBuilding
+BTAP1980TO2010,Transportation,WholeBuilding
+BTAP1980TO2010,Warehouse,WholeBuilding
+BTAP1980TO2010,Warehouse - refrigerated,WholeBuilding
+BTAP1980TO2010,Workshop,WholeBuilding

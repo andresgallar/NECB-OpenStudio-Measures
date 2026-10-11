@@ -1,0 +1,1592 @@
+{
+  "release": "1.0.0-rc.1",
+  "date": "2026-10-09",
+  "environment": {
+    "os": "Windows",
+    "application": "1.11.1",
+    "sdk": "3.11.0",
+    "energyplus": "25.2"
+  },
+  "standards_commit": "327689b0fe76331d781120ebc81d0f444f2546ba",
+  "tolerances": {
+    "site_and_fuel_totals": "max(0.02 GJ, 0.1%)",
+    "end_uses": "max(0.02 GJ, 0.5%)",
+    "restaurant_contamination_and_reapplication": "max(0.02 GJ, 0.02%); loop/name-order solver variation is not bitwise reproducible"
+  },
+  "matrix": [
+    {
+      "case": "QuickServiceRestaurant_NECB2020_Toronto",
+      "fixture": "ASHRAEQuickServiceRestaurant.osm",
+      "mapping_provenance": "Pinned NECB2011/data/geometry/QuickServiceRestaurant.osm matched public spaces",
+      "prototype": {
+        "total_site_GJ": 248.78,
+        "electricity_GJ": 130.59,
+        "gas_GJ": 118.18,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 18.85,
+        "Interior Lighting:Electricity_GJ": 47.43,
+        "Interior Equipment:Electricity_GJ": 24.85,
+        "Fans:Electricity_GJ": 28.51,
+        "Pumps:Electricity_GJ": 0.94,
+        "Heat Recovery:Electricity_GJ": 10.01,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 88.2,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 29.99
+      },
+      "reference": {
+        "total_site_GJ": 248.78,
+        "electricity_GJ": 130.59,
+        "gas_GJ": 118.18,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 18.85,
+        "Interior Lighting:Electricity_GJ": 47.43,
+        "Interior Equipment:Electricity_GJ": 24.85,
+        "Fans:Electricity_GJ": 28.51,
+        "Pumps:Electricity_GJ": 0.94,
+        "Heat Recovery:Electricity_GJ": 10.01,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 88.2,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 29.99
+      },
+      "passed": true,
+      "failures": [
+
+      ],
+      "site_energy_difference_percent": 0.0,
+      "prototype_skylights": {
+        "gross_roof_area_m2": 258.85668917287455,
+        "skylight_area_m2": 0,
+        "skylight_count": 0,
+        "srr": 0.0
+      },
+      "reference_skylights": {
+        "mode": "NRCPrototypeSkylights",
+        "library_srr_limit": 0.02,
+        "all_exterior_roofs_before": {
+          "gross_roof_area_m2": 258.85668917287455,
+          "skylight_area_m2": 0,
+          "skylight_count": 0,
+          "srr": 0.0
+        },
+        "all_exterior_roofs_after": {
+          "gross_roof_area_m2": 258.85668917287455,
+          "skylight_area_m2": 0,
+          "skylight_count": 0,
+          "srr": 0.0
+        },
+        "exposed_conditioned_nonplenum_roofs_after": {
+          "gross_roof_area_m2": 0,
+          "skylight_area_m2": 0,
+          "skylight_count": 0,
+          "srr": 0.0
+        },
+        "roofs": [
+          {
+            "surface": "east-roof",
+            "space": "attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 27.382238744068733,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          },
+          {
+            "surface": "north-roof",
+            "space": "attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 102.04610584236856,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          },
+          {
+            "surface": "south-roof",
+            "space": "attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 102.04610584236856,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          },
+          {
+            "surface": "west-roof",
+            "space": "attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 27.38223874406872,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          }
+        ],
+        "daylighting_scope": "NECB2020 8.4.4.5.(7) specifies an idealized skylight for daylighted-area calculations. It is not an unconditional instruction to insert thermal skylights through every roof. The pinned NRC daylight-control implementation is not a verified implementation of all Part 8 lighting calculations; review 8.4.4.5.(5)-(12).",
+        "denominator_scope": "Reported ratios distinguish all exterior roofs from the roofs eligible for the NRC generator. These are diagnostics, not a substitute for the gross insulated roof area defined in NECB 3.1.1.6."
+      },
+      "reoriented_surfaces": [
+
+      ],
+      "prototype_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1189083 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  6.50sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION DINING AREA - BAR LOUNGE/LEISURE DINING PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION FOOD PREPARATION AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 35KBTU/HR 15.0SEER\", invalid",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 35KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound.",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 1 31KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound."
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        87.17 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1515.50 Hours",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Cooling =       97.17 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Cooling =       45.17 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =      102.33 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       83.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       30.67 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       87.17 hr"
+        ]
+      },
+      "reference_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1189083 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  6.93sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION DINING AREA - BAR LOUNGE/LEISURE DINING PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION FOOD PREPARATION AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 35KBTU/HR 15.0SEER\", invalid",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 35KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound.",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 1 31KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound."
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        87.17 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1515.50 Hours",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Cooling =       97.17 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Cooling =       45.17 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =      102.33 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - BAR LOUNGE/LEISURE DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       83.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       30.67 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       87.17 hr"
+        ]
+      }
+    },
+    {
+      "case": "RetailStandalone_NECB2020_Toronto",
+      "fixture": "ASHRAE9012013RetailStandalone.osm",
+      "mapping_provenance": "Pinned NECB2011/data/geometry/RetailStandalone.osm matched public spaces",
+      "prototype": {
+        "total_site_GJ": 1249.04,
+        "electricity_GJ": 608.33,
+        "gas_GJ": 640.71,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 112.75,
+        "Interior Lighting:Electricity_GJ": 164.47,
+        "Interior Equipment:Electricity_GJ": 74.03,
+        "Fans:Electricity_GJ": 226.45,
+        "Pumps:Electricity_GJ": 11.48,
+        "Heat Recovery:Electricity_GJ": 19.16,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 613.94,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 26.76
+      },
+      "reference": {
+        "total_site_GJ": 1249.15,
+        "electricity_GJ": 608.34,
+        "gas_GJ": 640.81,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 112.75,
+        "Interior Lighting:Electricity_GJ": 164.47,
+        "Interior Equipment:Electricity_GJ": 74.03,
+        "Fans:Electricity_GJ": 226.45,
+        "Pumps:Electricity_GJ": 11.48,
+        "Heat Recovery:Electricity_GJ": 19.16,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 614.04,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 26.76
+      },
+      "passed": true,
+      "failures": [
+
+      ],
+      "site_energy_difference_percent": 0.008806763594448874,
+      "prototype_skylights": {
+        "gross_roof_area_m2": 2293.9929,
+        "skylight_area_m2": 45.879857999999665,
+        "skylight_count": 6,
+        "srr": 0.01999999999999985
+      },
+      "reference_skylights": {
+        "mode": "NRCPrototypeSkylights",
+        "library_srr_limit": 0.02,
+        "all_exterior_roofs_before": {
+          "gross_roof_area_m2": 2293.9929,
+          "skylight_area_m2": 23.78317824000001,
+          "skylight_count": 16,
+          "srr": 0.01036759016996086
+        },
+        "all_exterior_roofs_after": {
+          "gross_roof_area_m2": 2293.9929,
+          "skylight_area_m2": 45.879857999999665,
+          "skylight_count": 6,
+          "srr": 0.01999999999999985
+        },
+        "exposed_conditioned_nonplenum_roofs_after": {
+          "gross_roof_area_m2": 2293.9929,
+          "skylight_area_m2": 45.879857999999665,
+          "skylight_count": 6,
+          "srr": 0.01999999999999985
+        },
+        "roofs": [
+          {
+            "surface": "Back_Space_Roof",
+            "space": "Back_Space",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 379.89000000000004,
+            "skylight_area_m2": 7.597799999999963,
+            "skylight_count": 1,
+            "srr": 0.0199999999999999
+          },
+          {
+            "surface": "Core_Retail_Roof",
+            "space": "Core_Retail",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 1588.4829,
+            "skylight_area_m2": 31.76965799999967,
+            "skylight_count": 1,
+            "srr": 0.019999999999999792
+          },
+          {
+            "surface": "Core_Retail_Roof_Protrusion",
+            "space": "Core_Retail",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 12.0,
+            "skylight_area_m2": 0.2399999999999782,
+            "skylight_count": 1,
+            "srr": 0.019999999999998182
+          },
+          {
+            "surface": "Front_Entry_Roof",
+            "space": "Front_Entry",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 12.0,
+            "skylight_area_m2": 0.239999999999996,
+            "skylight_count": 1,
+            "srr": 0.019999999999999667
+          },
+          {
+            "surface": "Front_Retail_Roof",
+            "space": "Front_Retail",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 150.81,
+            "skylight_area_m2": 3.0162000000000306,
+            "skylight_count": 1,
+            "srr": 0.0200000000000002
+          },
+          {
+            "surface": "Point_Of_Sale_Roof",
+            "space": "Point_Of_Sale",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 150.81,
+            "skylight_area_m2": 3.0162000000000306,
+            "skylight_count": 1,
+            "srr": 0.0200000000000002
+          }
+        ],
+        "daylighting_scope": "NECB2020 8.4.4.5.(7) specifies an idealized skylight for daylighted-area calculations. It is not an unconditional instruction to insert thermal skylights through every roof. The pinned NRC daylight-control implementation is not a verified implementation of all Part 8 lighting calculations; review 8.4.4.5.(5)-(12).",
+        "denominator_scope": "Reported ratios distinguish all exterior roofs from the roofs eligible for the NRC generator. These are diagnostics, not a substitute for the gross insulated roof area defined in NECB 3.1.1.6."
+      },
+      "reoriented_surfaces": null,
+      "prototype_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 2192526 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 15.23sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 32 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION LOBBY - ELEVATOR PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION SALES AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION STORAGE ROOM < 5 M2-SCH-A PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 4\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 5\""
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         5.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =       137.17 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      2233.33 Hours",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Cooling =      126.67 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Cooling =        0.33 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Cooling =       74.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Cooling =       73.67 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Cooling =        0.33 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =      137.67 hr",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Occupied Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Occupied Cooling =      126.67 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Occupied Cooling =       73.83 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Occupied Cooling =       73.67 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        0.17 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =      137.17 hr"
+        ]
+      },
+      "reference_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 2191816 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 16.00sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 32 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION LOBBY - ELEVATOR PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION SALES AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION SALES AREA 1 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION SALES AREA 2 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION STORAGE ROOM < 5 M2-SCH-A PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\""
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         5.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =       137.17 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      2234.50 Hours",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Cooling =      126.67 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Cooling =       74.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Cooling =        0.33 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Cooling =       73.67 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Cooling =        0.33 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =      137.67 hr",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Occupied Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=LOBBY - ELEVATOR_FL=BUILDING STORY 1_SCH=C | During Occupied Cooling =      126.67 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C | During Occupied Cooling =       73.83 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 1 | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=SALES AREA_FL=BUILDING STORY 1_SCH=C 2 | During Occupied Cooling =       73.67 hr",
+          "Time Setpoint Not Met | ALL_ST=STORAGE ROOM < 5 M2-SCH-A_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        0.17 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =      137.17 hr"
+        ]
+      }
+    },
+    {
+      "case": "SmallOffice_NECB2020_Toronto",
+      "fixture": "ASHRAESmallOffice.osm",
+      "mapping_provenance": "Pinned NECB2011/data/geometry/SmallOffice.osm matched public spaces",
+      "prototype": {
+        "total_site_GJ": 245.18,
+        "electricity_GJ": 168.25,
+        "gas_GJ": 76.93,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 26.68,
+        "Interior Lighting:Electricity_GJ": 43.19,
+        "Interior Equipment:Electricity_GJ": 51.11,
+        "Fans:Electricity_GJ": 40.84,
+        "Pumps:Electricity_GJ": 2.22,
+        "Heat Recovery:Electricity_GJ": 4.2,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 51.03,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 25.9
+      },
+      "reference": {
+        "total_site_GJ": 245.18,
+        "electricity_GJ": 168.25,
+        "gas_GJ": 76.93,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 26.68,
+        "Interior Lighting:Electricity_GJ": 43.19,
+        "Interior Equipment:Electricity_GJ": 51.11,
+        "Fans:Electricity_GJ": 40.84,
+        "Pumps:Electricity_GJ": 2.22,
+        "Heat Recovery:Electricity_GJ": 4.2,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 51.03,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 25.9
+      },
+      "passed": true,
+      "failures": [
+
+      ],
+      "site_energy_difference_percent": 0.0,
+      "prototype_skylights": {
+        "gross_roof_area_m2": 598.7616811798497,
+        "skylight_area_m2": 0,
+        "skylight_count": 0,
+        "srr": 0.0
+      },
+      "reference_skylights": {
+        "mode": "NRCPrototypeSkylights",
+        "library_srr_limit": 0.02,
+        "all_exterior_roofs_before": {
+          "gross_roof_area_m2": 598.7616811798497,
+          "skylight_area_m2": 0,
+          "skylight_count": 0,
+          "srr": 0.0
+        },
+        "all_exterior_roofs_after": {
+          "gross_roof_area_m2": 598.7616811798497,
+          "skylight_area_m2": 0,
+          "skylight_count": 0,
+          "srr": 0.0
+        },
+        "exposed_conditioned_nonplenum_roofs_after": {
+          "gross_roof_area_m2": 0,
+          "skylight_area_m2": 0,
+          "skylight_count": 0,
+          "srr": 0.0
+        },
+        "roofs": [
+          {
+            "surface": "Attic_roof_east",
+            "space": "Attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 101.86617040494846,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          },
+          {
+            "surface": "Attic_roof_north",
+            "space": "Attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 197.51467018497635,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          },
+          {
+            "surface": "Attic_roof_south",
+            "space": "Attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 197.51467018497638,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          },
+          {
+            "surface": "Attic_roof_west",
+            "space": "Attic",
+            "eligible_for_default_generator": false,
+            "treatment": "Plenum roof: default NRC generator does not create skylight wells",
+            "gross_roof_area_m2": 101.86617040494846,
+            "skylight_area_m2": 0,
+            "skylight_count": 0,
+            "srr": 0.0
+          }
+        ],
+        "daylighting_scope": "NECB2020 8.4.4.5.(7) specifies an idealized skylight for daylighted-area calculations. It is not an unconditional instruction to insert thermal skylights through every roof. The pinned NRC daylight-control implementation is not a verified implementation of all Part 8 lighting calculations; review 8.4.4.5.(5)-(12).",
+        "denominator_scope": "Reported ratios distinguish all exterior roofs from the roofs eligible for the NRC generator. These are diagnostics, not a substitute for the gross insulated roof area defined in NECB 3.1.1.6."
+      },
+      "reoriented_surfaces": null,
+      "prototype_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 2959851 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 12.37sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 29 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION OFFICE ENCLOSED <= 25 M2 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 4\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 5\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 25KBTU/HR 15.0SEER\", invalid"
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =       167.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1234.17 Hours",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Cooling =      134.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Cooling =       26.17 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Cooling =       12.17 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Cooling =       21.67 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Cooling =       43.33 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =      184.67 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =      132.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Occupied Cooling =       23.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Occupied Cooling =        9.17 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Occupied Cooling =       16.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Occupied Cooling =       32.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =      167.33 hr"
+        ]
+      },
+      "reference_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 2959851 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 11.74sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 29 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION OFFICE ENCLOSED <= 25 M2 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 4\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 5\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 25KBTU/HR 15.0SEER\", invalid"
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =       167.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1234.17 Hours",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 3.05 M_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Cooling =      134.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Cooling =       43.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Cooling =       21.67 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Cooling =       26.17 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Cooling =       12.17 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 3.05 M_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =      184.67 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 3.05 M_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =      132.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 1 | During Occupied Cooling =       32.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 2 | During Occupied Cooling =       16.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 3 | During Occupied Cooling =       23.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A 4 | During Occupied Cooling =        9.17 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 3.05 M_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =      167.33 hr"
+        ]
+      }
+    },
+    {
+      "case": "Warehouse_NECB2020_Calgary",
+      "fixture": "ASHRAE90120102013Warehouse.osm",
+      "mapping_provenance": "Pinned NECB2011/data/geometry/Warehouse.osm matched public spaces",
+      "prototype": {
+        "total_site_GJ": 2206.07,
+        "electricity_GJ": 664.64,
+        "gas_GJ": 1541.44,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 74.56,
+        "Interior Lighting:Electricity_GJ": 157.2,
+        "Interior Equipment:Electricity_GJ": 84.99,
+        "Fans:Electricity_GJ": 313.44,
+        "Pumps:Electricity_GJ": 28.17,
+        "Heat Recovery:Electricity_GJ": 6.28,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 1475.68,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 65.76
+      },
+      "reference": {
+        "total_site_GJ": 2205.91,
+        "electricity_GJ": 664.63,
+        "gas_GJ": 1541.28,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 74.56,
+        "Interior Lighting:Electricity_GJ": 157.2,
+        "Interior Equipment:Electricity_GJ": 84.99,
+        "Fans:Electricity_GJ": 313.44,
+        "Pumps:Electricity_GJ": 28.17,
+        "Heat Recovery:Electricity_GJ": 6.27,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 1475.52,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 65.76
+      },
+      "passed": true,
+      "failures": [
+
+      ],
+      "site_energy_difference_percent": -0.007252716368943979,
+      "prototype_skylights": {
+        "gross_roof_area_m2": 4598.251963035113,
+        "skylight_area_m2": 91.96503926070206,
+        "skylight_count": 2,
+        "srr": 0.01999999999999996
+      },
+      "reference_skylights": {
+        "mode": "NRCPrototypeSkylights",
+        "library_srr_limit": 0.02,
+        "all_exterior_roofs_before": {
+          "gross_roof_area_m2": 4598.251963035113,
+          "skylight_area_m2": 68.37663744000002,
+          "skylight_count": 46,
+          "srr": 0.014870137171619339
+        },
+        "all_exterior_roofs_after": {
+          "gross_roof_area_m2": 4598.251963035113,
+          "skylight_area_m2": 91.96503926070206,
+          "skylight_count": 2,
+          "srr": 0.01999999999999996
+        },
+        "exposed_conditioned_nonplenum_roofs_after": {
+          "gross_roof_area_m2": 4598.251963035113,
+          "skylight_area_m2": 91.96503926070206,
+          "skylight_count": 2,
+          "srr": 0.01999999999999996
+        },
+        "roofs": [
+          {
+            "surface": "Bulk Storage Roof",
+            "space": "Zone3 Bulk Storage",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 3204.8422772668932,
+            "skylight_area_m2": 64.09684554533752,
+            "skylight_count": 1,
+            "srr": 0.01999999999999989
+          },
+          {
+            "surface": "Fine Storage Roof",
+            "space": "Zone2 Fine Storage",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 1393.4096857682193,
+            "skylight_area_m2": 27.868193715364537,
+            "skylight_count": 1,
+            "srr": 0.020000000000000108
+          }
+        ],
+        "daylighting_scope": "NECB2020 8.4.4.5.(7) specifies an idealized skylight for daylighted-area calculations. It is not an unconditional instruction to insert thermal skylights through every roof. The pinned NRC daylight-control implementation is not a verified implementation of all Part 8 lighting calculations; review 8.4.4.5.(5)-(12).",
+        "denominator_scope": "Reported ratios distinguish all exterior roofs from the roofs eligible for the NRC generator. These are diagnostics, not a substitute for the gross insulated roof area defined in NECB 3.1.1.6."
+      },
+      "reoriented_surfaces": [
+        "Zone2 Fine Storage: Bulk Storage Front Wall Reversed",
+        "Zone3 Bulk Storage: Bulk Storage Front Wall"
+      ],
+      "prototype_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1964362 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 10.27sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION OFFICE ENCLOSED <= 25 M2 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4) PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** Seems like you already tried to get a Handle on this Actuator 1times.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\""
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         3.50 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        54.67 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1349.67 Hours",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Heating =        4.83 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Heating =        1.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        4.83 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Cooling =       57.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Cooling =        1.33 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Cooling =        1.83 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       57.17 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        3.50 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        1.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        3.50 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =       54.50 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        1.33 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        1.83 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       54.67 hr"
+        ]
+      },
+      "reference_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1964323 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  9.71sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION OFFICE ENCLOSED <= 25 M2 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4) PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** Seems like you already tried to get a Handle on this Actuator 1times.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\""
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         3.50 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        54.67 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1346.83 Hours",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Heating =        4.83 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Heating =        1.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        4.83 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Cooling =       57.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Cooling =        1.33 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Cooling =        1.83 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       57.17 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        3.50 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        1.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        3.50 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =       54.50 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        1.33 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        1.83 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       54.67 hr"
+        ]
+      }
+    },
+    {
+      "case": "Warehouse_NECB2020_Toronto",
+      "fixture": "ASHRAE90120102013Warehouse.osm",
+      "mapping_provenance": "Pinned NECB2011/data/geometry/Warehouse.osm matched public spaces",
+      "prototype": {
+        "total_site_GJ": 2402.85,
+        "electricity_GJ": 801.18,
+        "gas_GJ": 1601.67,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 179.19,
+        "Interior Lighting:Electricity_GJ": 154.46,
+        "Interior Equipment:Electricity_GJ": 84.99,
+        "Fans:Electricity_GJ": 370.74,
+        "Pumps:Electricity_GJ": 4.42,
+        "Heat Recovery:Electricity_GJ": 7.37,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 1540.93,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 60.74
+      },
+      "reference": {
+        "total_site_GJ": 2403.08,
+        "electricity_GJ": 801.42,
+        "gas_GJ": 1601.66,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 179.2,
+        "Interior Lighting:Electricity_GJ": 154.46,
+        "Interior Equipment:Electricity_GJ": 84.99,
+        "Fans:Electricity_GJ": 370.99,
+        "Pumps:Electricity_GJ": 4.42,
+        "Heat Recovery:Electricity_GJ": 7.37,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 1540.92,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 60.74
+      },
+      "passed": true,
+      "failures": [
+
+      ],
+      "site_energy_difference_percent": 0.009571966622967665,
+      "prototype_skylights": {
+        "gross_roof_area_m2": 4598.251963035113,
+        "skylight_area_m2": 91.96503926070206,
+        "skylight_count": 2,
+        "srr": 0.01999999999999996
+      },
+      "reference_skylights": {
+        "mode": "NRCPrototypeSkylights",
+        "library_srr_limit": 0.02,
+        "all_exterior_roofs_before": {
+          "gross_roof_area_m2": 4598.251963035113,
+          "skylight_area_m2": 68.37663744000002,
+          "skylight_count": 46,
+          "srr": 0.014870137171619339
+        },
+        "all_exterior_roofs_after": {
+          "gross_roof_area_m2": 4598.251963035113,
+          "skylight_area_m2": 91.96503926070206,
+          "skylight_count": 2,
+          "srr": 0.01999999999999996
+        },
+        "exposed_conditioned_nonplenum_roofs_after": {
+          "gross_roof_area_m2": 4598.251963035113,
+          "skylight_area_m2": 91.96503926070206,
+          "skylight_count": 2,
+          "srr": 0.01999999999999996
+        },
+        "roofs": [
+          {
+            "surface": "Bulk Storage Roof",
+            "space": "Zone3 Bulk Storage",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 3204.8422772668932,
+            "skylight_area_m2": 64.09684554533752,
+            "skylight_count": 1,
+            "srr": 0.01999999999999989
+          },
+          {
+            "surface": "Fine Storage Roof",
+            "space": "Zone2 Fine Storage",
+            "eligible_for_default_generator": true,
+            "treatment": "Generated by the NRC prototype convention; area and geometry verified",
+            "gross_roof_area_m2": 1393.4096857682193,
+            "skylight_area_m2": 27.868193715364537,
+            "skylight_count": 1,
+            "srr": 0.020000000000000108
+          }
+        ],
+        "daylighting_scope": "NECB2020 8.4.4.5.(7) specifies an idealized skylight for daylighted-area calculations. It is not an unconditional instruction to insert thermal skylights through every roof. The pinned NRC daylight-control implementation is not a verified implementation of all Part 8 lighting calculations; review 8.4.4.5.(5)-(12).",
+        "denominator_scope": "Reported ratios distinguish all exterior roofs from the roofs eligible for the NRC generator. These are diagnostics, not a substitute for the gross insulated roof area defined in NECB 3.1.1.6."
+      },
+      "reoriented_surfaces": [
+        "Zone2 Fine Storage: Bulk Storage Front Wall Reversed",
+        "Zone3 Bulk Storage: Bulk Storage Front Wall"
+      ],
+      "prototype_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1948316 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 11.34sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION OFFICE ENCLOSED <= 25 M2 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4) PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** Seems like you already tried to get a Handle on this Actuator 1times.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\""
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         4.83 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        21.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1309.17 Hours",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Heating =        5.67 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Heating =        2.50 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        6.00 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Cooling =       29.17 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Cooling =        0.17 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Cooling =        0.67 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       29.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        4.50 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        2.50 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        4.83 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =       21.17 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        0.17 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       21.33 hr"
+        ]
+      },
+      "reference_diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1945600 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 11.54sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION OFFICE ENCLOSED <= 25 M2 PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4) PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** Seems like you already tried to get a Handle on this Actuator 1times.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 3\""
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         4.83 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        21.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1309.33 Hours",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Heating =        5.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Heating =        2.50 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        5.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Cooling =       29.17 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Cooling =        0.17 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Cooling =        0.67 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       29.33 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        4.50 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Heating =        2.50 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        4.83 hr",
+          "Time Setpoint Not Met | ALL_ST=OFFICE ENCLOSED <= 25 M2_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =       21.17 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA MEDIUM TO BULKY PALLETIZED ITEMS_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=WAREHOUSE STORAGE AREA SMALL HAND-CARRIED ITEMS(4)_FL=BUILDING STORY 1_SCH=A | During Occupied Cooling =        0.17 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       21.33 hr"
+        ]
+      }
+    }
+  ],
+  "restaurant": {
+    "prototype": {
+      "energy": {
+        "total_site_GJ": 591.48,
+        "electricity_GJ": 226.79,
+        "gas_GJ": 364.69,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 29.46,
+        "Interior Lighting:Electricity_GJ": 78.69,
+        "Interior Equipment:Electricity_GJ": 34.34,
+        "Fans:Electricity_GJ": 59.49,
+        "Pumps:Electricity_GJ": 1.53,
+        "Heat Recovery:Electricity_GJ": 23.27,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 264.7,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 100.0
+      },
+      "diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1174298 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  6.57sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION DINING AREA - FAMILY DINING PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION FOOD PREPARATION AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 32KBTU/HR 15.0SEER\", invalid",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 32KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound.",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 1 113KBTU/HR 11.0EER but not at the AHRI test condition due to curve out of bound."
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        29.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1490.33 Hours",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Cooling =       17.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       12.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       29.33 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       29.33 hr"
+        ]
+      }
+    },
+    "clean": {
+      "energy": {
+        "total_site_GJ": 591.53,
+        "electricity_GJ": 226.79,
+        "gas_GJ": 364.73,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 29.46,
+        "Interior Lighting:Electricity_GJ": 78.69,
+        "Interior Equipment:Electricity_GJ": 34.34,
+        "Fans:Electricity_GJ": 59.49,
+        "Pumps:Electricity_GJ": 1.53,
+        "Heat Recovery:Electricity_GJ": 23.27,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 264.74,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 99.99
+      },
+      "diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1173837 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  6.64sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION DINING AREA - FAMILY DINING PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION FOOD PREPARATION AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 113KBTU/HR 11.0EER\", invalid",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 113KBTU/HR 11.0EER but not at the AHRI test condition due to curve out of bound.",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 1 32KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound."
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        29.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1490.00 Hours",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Cooling =       17.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       12.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       29.33 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       29.33 hr"
+        ]
+      }
+    },
+    "contaminated": {
+      "energy": {
+        "total_site_GJ": 591.53,
+        "electricity_GJ": 226.79,
+        "gas_GJ": 364.73,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 29.46,
+        "Interior Lighting:Electricity_GJ": 78.69,
+        "Interior Equipment:Electricity_GJ": 34.34,
+        "Fans:Electricity_GJ": 59.49,
+        "Pumps:Electricity_GJ": 1.53,
+        "Heat Recovery:Electricity_GJ": 23.27,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 264.74,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 99.99
+      },
+      "diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1173837 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  6.68sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION DINING AREA - FAMILY DINING PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION FOOD PREPARATION AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 113KBTU/HR 11.0EER\", invalid",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 113KBTU/HR 11.0EER but not at the AHRI test condition due to curve out of bound.",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 1 32KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound."
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        29.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1490.00 Hours",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Cooling =       17.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       12.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       29.33 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       29.33 hr"
+        ]
+      }
+    },
+    "reapplied": {
+      "energy": {
+        "total_site_GJ": 591.53,
+        "electricity_GJ": 226.79,
+        "gas_GJ": 364.73,
+        "Heating:Electricity_GJ": 0.0,
+        "Cooling:Electricity_GJ": 29.46,
+        "Interior Lighting:Electricity_GJ": 78.69,
+        "Interior Equipment:Electricity_GJ": 34.34,
+        "Fans:Electricity_GJ": 59.49,
+        "Pumps:Electricity_GJ": 1.53,
+        "Heat Recovery:Electricity_GJ": 23.27,
+        "Water Systems:Electricity_GJ": 0.0,
+        "Heating:Natural Gas_GJ": 264.74,
+        "Cooling:Natural Gas_GJ": 0.0,
+        "Interior Lighting:Natural Gas_GJ": 0.0,
+        "Interior Equipment:Natural Gas_GJ": 0.0,
+        "Fans:Natural Gas_GJ": 0.0,
+        "Pumps:Natural Gas_GJ": 0.0,
+        "Heat Recovery:Natural Gas_GJ": 0.0,
+        "Water Systems:Natural Gas_GJ": 99.99
+      },
+      "diagnostics": {
+        "severe_errors": 0,
+        "warmup_convergence_errors": 0,
+        "severe_error_examples": [
+
+        ],
+        "completion": [
+          "************* EnergyPlus Completed Successfully-- 1173837 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  7.86sec"
+        ],
+        "warning_examples": [
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+          "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+          "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+          "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION DINING AREA - FAMILY DINING PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION FOOD PREPARATION AREA PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+          "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\"",
+          "** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed=\"COILCOOLINGDXSINGLESPEED_DX 113KBTU/HR 11.0EER\", invalid",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 113KBTU/HR 11.0EER but not at the AHRI test condition due to curve out of bound.",
+          "** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = COILCOOLINGDXSINGLESPEED_DX 1 32KBTU/HR 15.0SEER but not at the AHRI test condition due to curve out of bound."
+        ],
+        "setpoint_not_met": [
+          "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         0.00 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =        29.33 Hours",
+          "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1490.00 Hours",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Cooling =       17.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Cooling =       42.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Heating =        0.00 hr",
+          "Time Setpoint Not Met | ALL_ST=DINING AREA - FAMILY DINING_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       12.33 hr",
+          "Time Setpoint Not Met | ALL_ST=FOOD PREPARATION AREA_FL=BUILDING STORY 1_SCH=B | During Occupied Cooling =       29.33 hr",
+          "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+          "Time Setpoint Not Met | Facility | During Occupied Cooling =       29.33 hr"
+        ]
+      }
+    }
+  },
+  "targeted_medium_office_rc2": {
+    "passed": true,
+    "prototype": {
+      "total_site_GJ": 2041.94,
+      "electricity_GJ": 1396.01,
+      "gas_GJ": 645.93,
+      "Heating:Electricity_GJ": 0.0,
+      "Cooling:Electricity_GJ": 208.42,
+      "Interior Lighting:Electricity_GJ": 347.32,
+      "Interior Equipment:Electricity_GJ": 498.17,
+      "Fans:Electricity_GJ": 271.23,
+      "Pumps:Electricity_GJ": 59.33,
+      "Heat Recovery:Electricity_GJ": 3.75,
+      "Water Systems:Electricity_GJ": 0.0,
+      "Heating:Natural Gas_GJ": 406.67,
+      "Cooling:Natural Gas_GJ": 0.0,
+      "Interior Lighting:Natural Gas_GJ": 0.0,
+      "Interior Equipment:Natural Gas_GJ": 0.0,
+      "Fans:Natural Gas_GJ": 0.0,
+      "Pumps:Natural Gas_GJ": 0.0,
+      "Heat Recovery:Natural Gas_GJ": 0.0,
+      "Water Systems:Natural Gas_GJ": 239.25
+    },
+    "reference": {
+      "total_site_GJ": 2041.2,
+      "electricity_GJ": 1395.84,
+      "gas_GJ": 645.36,
+      "Heating:Electricity_GJ": 0.0,
+      "Cooling:Electricity_GJ": 208.42,
+      "Interior Lighting:Electricity_GJ": 347.32,
+      "Interior Equipment:Electricity_GJ": 498.17,
+      "Fans:Electricity_GJ": 271.09,
+      "Pumps:Electricity_GJ": 59.29,
+      "Heat Recovery:Electricity_GJ": 3.75,
+      "Water Systems:Electricity_GJ": 0.0,
+      "Heating:Natural Gas_GJ": 406.1,
+      "Cooling:Natural Gas_GJ": 0.0,
+      "Interior Lighting:Natural Gas_GJ": 0.0,
+      "Interior Equipment:Natural Gas_GJ": 0.0,
+      "Fans:Natural Gas_GJ": 0.0,
+      "Pumps:Natural Gas_GJ": 0.0,
+      "Heat Recovery:Natural Gas_GJ": 0.0,
+      "Water Systems:Natural Gas_GJ": 239.26
+    },
+    "site_difference_percent": -0.036240046230551215,
+    "spaces": 18,
+    "air_loops": 3,
+    "stories": 3,
+    "plenum_equipment_W": 0.0,
+    "known_shared_warmup_errors": {
+      "prototype": 3,
+      "reference": 3,
+      "limitation": "Numerical energy comparison passes with shared upstream warmup convergence errors; not a clean annual validation."
+    },
+    "date": "2026-10-10",
+    "edition": "NECB2020",
+    "weather": "Toronto CWEC2020",
+    "heating_and_swh_fuel": "NaturalGas",
+    "source": "User-provided public-prototype geometry; local model files excluded from release",
+    "reference_diagnostics": {
+      "severe_errors": 3,
+      "warmup_convergence_errors": 3,
+      "severe_error_examples": [
+        "** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone=\"ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A\" did not converge after 25 warmup days.",
+        "** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone=\"ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 2\" did not converge after 25 warmup days.",
+        "** Severe  ** CheckWarmupConvergence: Loads Initialization, Zone=\"ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 3\" did not converge after 25 warmup days."
+      ],
+      "completion": [
+        "************* EnergyPlus Completed Successfully-- 12491376 Warning; 3 Severe Errors; Elapsed Time=00hr 01min  1.46sec"
+      ],
+      "warning_examples": [
+        "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = ECONOMIZER MAX OA FRACTION 100 PCT DEFAULT",
+        "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 1",
+        "** Warning ** ProcessScheduleInput: Schedule:Day:Interval = SCHEDULE DAY 2",
+        "** Warning ** ProcessScheduleInput: Schedule:Year = ECONOMIZER MAX OA FRACTION 100 PCT",
+        "** Warning ** CheckUsedConstructions: There are 30 nominally unused constructions in input.",
+        "** Warning ** GetInternalHeatGains: People=\"SPACE FUNCTION OFFICE OPEN PLAN PEOPLE\" has comfort related schedules but no thermal comfort model selected.",
+        "** Warning ** Seems like you already tried to get a Handle on this Actuator 1times.",
+        "** Warning ** Seems like you already tried to get a Handle on this Actuator 2times.",
+        "** Warning ** Since Zone Minimum Air Flow Input Method = CONSTANT, input for Fixed Minimum Air Flow Rate will be ignored.",
+        "** Warning ** Since Damper Heating Action = NORMAL, input for Maximum Flow Fraction During Reheat will be ignored.",
+        "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 1\"",
+        "** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation=\"CONTROLLER MECHANICAL VENTILATION 2\""
+      ],
+      "setpoint_not_met": [
+        "Setpoint Not Met Criteria | Tolerance for Zone Heating Setpoint Not Met Time | Degrees =         1.00 deltaC",
+        "Setpoint Not Met Criteria | Tolerance for Zone Cooling Setpoint Not Met Time | Degrees =         1.00 deltaC",
+        "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Heating | Facility =         1.17 Hours",
+        "Comfort and Setpoint Not Met Summary | Time Setpoint Not Met During Occupied Cooling | Facility =       143.50 Hours",
+        "Comfort and Setpoint Not Met Summary | Time Not Comfortable Based on Simple ASHRAE 55-2004 | Facility =      1952.83 Hours",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Heating =        1.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 1 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 2 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 3 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 4 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 1 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 2 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 3 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 4 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 1 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 2 | During Heating =        0.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 3 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 4 | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 0.0 M_SCH=A | During Heating =        0.00 hr",
+        "Time Setpoint Not Met | Facility | During Heating =        1.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Cooling =       27.33 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 1 | During Cooling =        9.50 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 2 | During Cooling =       31.67 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 3 | During Cooling =       20.67 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 4 | During Cooling =       23.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Cooling =       19.50 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 1 | During Cooling =        8.67 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 2 | During Cooling =       18.33 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 3 | During Cooling =       25.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 4 | During Cooling =       20.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A | During Cooling =       25.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 1 | During Cooling =       16.83 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 2 | During Cooling =       18.50 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 3 | During Cooling =      112.67 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 4 | During Cooling =        7.83 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Cooling =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Cooling =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 0.0 M_SCH=A | During Cooling =        0.00 hr",
+        "Time Setpoint Not Met | Facility | During Cooling =      159.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Occupied Heating =        1.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 1 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 2 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 3 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 4 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 1 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 2 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 3 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 4 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 1 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 2 | During Occupied Heating =        0.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 3 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 4 | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 0.0 M_SCH=A | During Occupied Heating =        0.00 hr",
+        "Time Setpoint Not Met | Facility | During Occupied Heating =        1.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Occupied Cooling =       14.33 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 1 | During Occupied Cooling =        9.33 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 2 | During Occupied Cooling =       31.50 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 3 | During Occupied Cooling =       19.67 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A 4 | During Occupied Cooling =       20.67 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Occupied Cooling =       12.33 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 1 | During Occupied Cooling =        8.50 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 2 | During Occupied Cooling =       17.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 3 | During Occupied Cooling =       24.83 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A 4 | During Occupied Cooling =       19.17 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A | During Occupied Cooling =       23.50 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 1 | During Occupied Cooling =       16.00 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 2 | During Occupied Cooling =        4.33 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 3 | During Occupied Cooling =      112.33 hr",
+        "Time Setpoint Not Met | ALL_ST=OFFICE OPEN PLAN_FL=NECB STORY AT 0.0 M_SCH=A 4 | During Occupied Cooling =        7.67 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 2_SCH=A | During Occupied Cooling =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB REVIEWED MEDIUMOFFICE BUILDING STORY 3_SCH=A | During Occupied Cooling =        0.00 hr",
+        "Time Setpoint Not Met | ALL_ST=- UNDEFINED -_FL=NECB STORY AT 0.0 M_SCH=A | During Occupied Cooling =        0.00 hr",
+        "Time Setpoint Not Met | Facility | During Occupied Cooling =      143.50 hr"
+      ]
+    }
+  }
+}

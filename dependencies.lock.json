@@ -1,0 +1,21 @@
+{
+  "standards": {
+    "repository": "https://github.com/NREL/openstudio-standards.git",
+    "branch": "nrcan_nrc",
+    "commit": "327689b0fe76331d781120ebc81d0f444f2546ba"
+  },
+  "gems": [
+    {"name": "git-revision", "version": "1.0.0", "sha256": "6554be727aa610d09da1cad7eba7c6a8b396f95af6e88c9bf6e14b5819bd4a47"},
+    {"name": "tbd", "version": "3.6.1", "sha256": "0fb36d3c0061f784d7609a3366f4104ad97ddfb56d282af82c8ea2ace7b85aa5"},
+    {"name": "osut", "version": "0.9.1", "sha256": "35b48093353af11bdc1402bd977afcd9289eb693a8d83d5d6f103557917fb659"},
+    {"name": "topolys", "version": "0.6.2", "sha256": "fb6ba2d87cb2be681af7c6cfd7ea680a645f157ab73734ad27040eecaafbe068"},
+    {"name": "oslg", "version": "0.4.0", "sha256": "3461be447e97c6a6897116732fe9570d21fb04de92df5fdaf0116a4478f22ca8"}
+  ],
+  "sdk_dependencies": ["openstudio", "json-schema ~> 4", "rubyzip", "matrix"],
+  "tested_sdk": "3.11.0",
+  "nrc_measure": {
+    "repository": "https://github.com/nrc-cnrc/OpenStudio-Measures",
+    "commit": "e247ba1dddef1933dc99f894594f5203f28cb4e9",
+    "path": "measures/nrc_create_necb_prototype_building"
+  }
+}

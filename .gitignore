@@ -1,0 +1,27 @@
+vendor-src/
+downloads/
+test-output/
+dist/
+qa copy/
+necb_archetype_*/
+necb_reference_*/
+installation-backups/
+necb_mapping_review_*/
+sandbox-repair-status.txt
+*.log
+*.sql
+*.sql-shm
+*.sql-wal
+*.idf
+*.err
+*.out
+*.eso
+*.mtr
+*.rdd
+*.mdd
+*.eio
+*.audit
+*.bnd
+*.end
+*.expidf
+*.bak

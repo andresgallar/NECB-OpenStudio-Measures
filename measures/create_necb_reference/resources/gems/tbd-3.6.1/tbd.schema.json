@@ -1,0 +1,755 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://github.com/rd2/tbd/blob/master/tbd.schema.json",
+  "title": "TBD Schema",
+  "description": "Schema for Thermal Bridging and Derating",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "schema": {
+      "type": "string"
+    },
+    "psis": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PSI"
+      },
+      "uniqueItems": true
+    },
+    "khis": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/KHI"
+      },
+      "uniqueItems": true
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Edge"
+      },
+      "uniqueItems": true
+    },
+    "subsurfaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/SubSurface"
+      },
+      "uniqueItems": true
+    },
+    "surfaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Surface"
+      },
+      "uniqueItems": true
+    },
+    "spaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Space"
+      },
+      "uniqueItems": true
+    },
+    "spacetypes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/SpaceType"
+      },
+      "uniqueItems": true
+    },
+    "stories": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Story"
+      },
+      "uniqueItems": true
+    },
+    "building": {
+      "type": "object",
+      "$ref": "#/definitions/Building"
+    },
+    "log": {
+      "type": "object",
+      "$ref": "#/definitions/Log"
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "PSI": {
+      "description": "Set of PSI-values (in W/K per m) for thermal bridges",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Unique PSI set identifier",
+          "type": "string"
+        },
+        "rimjoist": {
+          "title": "Floor/wall edge PSI",
+          "type": "number"
+        },
+        "rimjoistconcave": {
+          "title": "Concave floor/wall edge PSI",
+          "type": "number"
+        },
+        "rimjoistconvex": {
+          "title": "Convex floor/wall edge PSI",
+          "type": "number"
+        },
+        "parapet": {
+          "title": "Parapet/overhang edge PSI",
+          "type": "number"
+        },
+        "parapetconcave": {
+          "title": "Concave parapet/overhang edge PSI",
+          "type": "number"
+        },
+        "parapetconvex": {
+          "title": "Convex parapet/overhang edge PSI",
+          "type": "number"
+        },
+        "roof": {
+          "title": "Roof/wall (other than parapet/overhang) edge PSI",
+          "type": "number"
+        },
+        "roofconcave": {
+          "title": "Concave (other than parapet/overhang) roof/wall edge PSI",
+          "type": "number"
+        },
+        "roofconvex": {
+          "title": "Convex (other than parapet/overhang) roof/wall edge PSI",
+          "type": "number"
+        },
+        "ceiling": {
+          "title": "Intermediate ceiling (not floor) edge PSI",
+          "type": "number"
+        },
+        "ceilingconcave": {
+          "title": "Concave intermediate ceiling (not floor) edge PSI",
+          "type": "number"
+        },
+        "ceilingconvex": {
+          "title": "Convex intermediate ceiling (not floor) edge PSI",
+          "type": "number"
+        },
+        "fenestration": {
+          "title": "Window or glazed door perimeter PSI",
+          "type": "number"
+        },
+        "head": {
+          "title": "Window or glazed door header/lintel PSI",
+          "type": "number"
+        },
+        "headconcave": {
+          "title": "Concave window or glazed door header/lintel PSI",
+          "type": "number"
+        },
+        "headconvex": {
+          "title": "Convex window or glazed door header/lintel PSI",
+          "type": "number"
+        },
+        "sill": {
+          "title": "Window or glazed door sill/threshold PSI",
+          "type": "number"
+        },
+        "sillconcave": {
+          "title": "Concave window or glazed door sill/threshold PSI",
+          "type": "number"
+        },
+        "sillconvex": {
+          "title": "Convex window or glazed door sill/threshold PSI",
+          "type": "number"
+        },
+        "jamb": {
+          "title": "Window or glazed door side jamb PSI",
+          "type": "number"
+        },
+        "jambconcave": {
+          "title": "Concave window or glazed door side jamb PSI",
+          "type": "number"
+        },
+        "jambconvex": {
+          "title": "Convex window or glazed door side jamb PSI",
+          "type": "number"
+        },
+        "door": {
+          "title": "Opaque door perimeter PSI",
+          "type": "number"
+        },
+        "doorhead": {
+          "title": "Opaque door header/lintel PSI",
+          "type": "number"
+        },
+        "doorheadconcave": {
+          "title": "Concave opaque door header/lintel PSI",
+          "type": "number"
+        },
+        "doorheadconvex": {
+          "title": "Convex opaque door header/lintel PSI",
+          "type": "number"
+        },
+        "doorsill": {
+          "title": "Opaque door sill/threshold PSI",
+          "type": "number"
+        },
+        "doorsillconcave": {
+          "title": "Concave opaque door sill/threshold PSI",
+          "type": "number"
+        },
+        "doorsillconvex": {
+          "title": "Convex opaque door sill/threshold PSI",
+          "type": "number"
+        },
+        "doorjamb": {
+          "title": "Opaque door side jamb PSI",
+          "type": "number"
+        },
+        "doorjambconcave": {
+          "title": "Concave opaque door side jamb PSI",
+          "type": "number"
+        },
+        "doorjambconvex": {
+          "title": "Convex opaque door side jamb PSI",
+          "type": "number"
+        },
+        "skylight": {
+          "title": "Skylight perimeter PSI",
+          "type": "number"
+        },
+        "skylighthead": {
+          "title": "Skylight header/lintel PSI",
+          "type": "number"
+        },
+        "skylightheadconcave": {
+          "title": "Concave skylight header/lintel PSI",
+          "type": "number"
+        },
+        "skylightheadconvex": {
+          "title": "Convex skylight header/lintel PSI",
+          "type": "number"
+        },
+        "skylightsill": {
+          "title": "Skylight sill/threshold PSI",
+          "type": "number"
+        },
+        "skylightsillconcave": {
+          "title": "Concave skylight sill/threshold PSI",
+          "type": "number"
+        },
+        "skylightsillconvex": {
+          "title": "Convex skylight sill/threshold PSI",
+          "type": "number"
+        },
+        "skylightjamb": {
+          "title": "Skylight side jamb PSI",
+          "type": "number"
+        },
+        "skylightjambconcave": {
+          "title": "Concave skylight side jamb PSI",
+          "type": "number"
+        },
+        "skylightjambconvex": {
+          "title": "Convex skylight side jamb PSI",
+          "type": "number"
+        },
+        "spandrel": {
+          "title": "Spandrel/other edge PSI",
+          "type": "number"
+        },
+        "spandrelconcave": {
+          "title": "Concave spandrel/other edge PSI",
+          "type": "number"
+        },
+        "spandrelconvex": {
+          "title": "Convex spandrel/other edge PSI",
+          "type": "number"
+        },
+        "corner": {
+          "title": "Any wall corner [0deg,135deg) or (225deg,360deg] PSI",
+          "type": "number"
+        },
+        "cornerconcave": {
+          "title": "Concave wall corner [0deg,135deg) PSI",
+          "type": "number"
+        },
+        "cornerconvex": {
+          "title": "Convex wall corner (225deg,360deg] PSI",
+          "type": "number"
+        },
+        "balcony": {
+          "title": "Floor/balcony edge PSI ",
+          "type": "number"
+        },
+        "balconyconcave": {
+          "title": "Concave floor/balcony edge PSI ",
+          "type": "number"
+        },
+        "balconyconvex": {
+          "title": "Convex floor/balcony edge PSI ",
+          "type": "number"
+        },
+        "balconysill": {
+          "title": "Floor/balcony/sill edge PSI ",
+          "type": "number"
+        },
+        "balconysillconcave": {
+          "title": "Concave floor/balcony/sill edge PSI ",
+          "type": "number"
+        },
+        "balconysillconvex": {
+          "title": "Convex floor/balcony/sill edge PSI ",
+          "type": "number"
+        },
+        "party": {
+          "title": "Party wall edge PSI",
+          "type": "number"
+        },
+        "partyconcave": {
+          "title": "Concave party wall edge PSI",
+          "type": "number"
+        },
+        "partyconvex": {
+          "title": "Convex party wall edge PSI",
+          "type": "number"
+        },
+        "grade": {
+          "title": "Floor/foundation edge PSI",
+          "type": "number"
+        },
+        "gradeconcave": {
+          "title": "Concave floor/foundation edge PSI",
+          "type": "number"
+        },
+        "gradeconvex": {
+          "title": "Convex floor/foundation edge PSI",
+          "type": "number"
+        },
+        "joint": {
+          "title": "Joints PSI",
+          "type": "number"
+        },
+        "transition": {
+          "title": "(Mild) transition PSI",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 2,
+      "required": [
+        "id"
+      ]
+    },
+    "KHI": {
+      "description": "KHI-value (in W/K) for a point thermal bridge",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Unique KHI identifier",
+          "type": "string"
+        },
+        "point": {
+          "title": "Point KHI-value",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "point"
+      ]
+    },
+    "Edge": {
+      "description": "Surface(s) edge as thermal bridge",
+      "type": "object",
+      "properties": {
+        "psi": {
+          "title": "PSI-set identifier",
+          "type": "string"
+        },
+        "type": {
+          "title": "PSI-set type e.g., 'parapet'",
+          "type": "string",
+          "enum": [
+            "rimjoist",
+            "rimjoistconcave",
+            "rimjoisconvext",
+            "parapet",
+            "parapetconcave",
+            "parapetconvex",
+            "roof",
+            "roofconcave",
+            "roofconvex",
+            "ceiling",
+            "ceilingconcave",
+            "ceilingconvex",
+            "fenestration",
+            "head",
+            "headconcave",
+            "headconvex",
+            "sill",
+            "sillconcave",
+            "sillconvex",
+            "jamb",
+            "jambconcave",
+            "jambconvex",
+            "door",
+            "doorhead",
+            "doorheadconcave",
+            "doorheadconvex",
+            "doorsill",
+            "doorsillconcave",
+            "doorsillconvex",
+            "doorjamb",
+            "doorjambconcave",
+            "doorjambconvex",
+            "skylight",
+            "skylighthead",
+            "skylightheadconcave",
+            "skylightheadconvex",
+            "skylightsill",
+            "skylightsillconcave",
+            "skylightsillconvex",
+            "skylightjamb",
+            "skylightjambconcave",
+            "skylightjambconvex",
+            "spandrel",
+            "spandrelconcave",
+            "spandrelconvex",
+            "corner",
+            "cornerconcave",
+            "cornerconvex",
+            "balcony",
+            "balconyconcave",
+            "balconyconvex",
+            "balconysill",
+            "balconysillconcave",
+            "balconysillconvex",
+            "party",
+            "partyconcave",
+            "partyconvex",
+            "grade",
+            "gradeconcave",
+            "gradeconvex",
+            "joint",
+            "transition"
+          ]
+        },
+        "length": {
+          "title": "Edge length (m), > 0 m",
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMinimum": true
+        },
+        "v0x": {
+          "title": "Edge origin X vertex (m)",
+          "type": "number"
+        },
+        "v0y": {
+          "title": "Edge origin Y vertex (m)",
+          "type": "number"
+        },
+        "v0z": {
+          "title": "Edge origin Z vertex (m)",
+          "type": "number"
+        },
+        "v1x": {
+          "title": "Edge terminal X vertex (m)",
+          "type": "number"
+        },
+        "v1y": {
+          "title": "Edge terminal Y vertex (m)",
+          "type": "number"
+        },
+        "v1z": {
+          "title": "Edge terminal Z vertex (m)",
+          "type": "number"
+        },
+        "surfaces": {
+          "title": "Surface(s) connected to edge",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "surfaces"
+      ]
+    },
+    "SubSurface": {
+      "description": "Suburface(s) U-factors (optional)",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "e.g. OS or E+ surface identifier",
+          "type": "string"
+        },
+        "usi": {
+          "title": "Overall U-factor",
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 10.0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "usi"
+      ]
+    },
+    "Surface": {
+      "description": "Surface default PSI-set (optional)",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "e.g. OS or E+ surface identifier",
+          "type": "string"
+        },
+        "psi": {
+          "title": "PSI-set identifier",
+          "type": "string"
+        },
+        "parapet": {
+          "title": "wall-roof edge as parapet",
+          "type": "boolean"
+        },
+        "khis": {
+          "title": "Surface-hosted point thermal bridges",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Unique KHI-value identifier",
+                "type": "string"
+              },
+              "count": {
+                "title": "Number of KHI-matching point thermal bridges",
+                "type": "number",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "count"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 2,
+      "required": [
+        "id"
+      ]
+    },
+    "Space": {
+      "description": "Space default PSI-set (optional for OS)",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "e.g. OS space or E+ zone identifier",
+          "type": "string"
+        },
+        "psi": {
+          "title": "PSI-set identifier",
+          "type": "string"
+        },
+        "parapet": {
+          "title": "wall-roof edge as parapet",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 2,
+      "required": [
+        "id"
+      ]
+    },
+    "SpaceType": {
+      "description": "SpaceType default PSI-set (optional for OS)",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "e.g. OS spacetype identifier",
+          "type": "string"
+        },
+        "psi": {
+          "title": "PSI-set identifier",
+          "type": "string"
+        },
+        "parapet": {
+          "title": "wall-roof edge as parapet",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 2,
+      "required": [
+        "id"
+      ]
+    },
+    "Story": {
+      "description": "Story default PSI-set (optional for OS)",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "e.g. OS story identifier",
+          "type": "string"
+        },
+        "psi": {
+          "title": "PSI-set identifier",
+          "type": "string"
+        },
+        "parapet": {
+          "title": "wall-roof edge as parapet",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 2,
+      "required": [
+        "id"
+      ]
+    },
+    "Building": {
+      "description": "Building default PSI-set (optional for OS)",
+      "type": "object",
+      "properties": {
+        "psi": {
+          "title": "PSI-set identifier",
+          "type": "string"
+        },
+        "parapet": {
+          "title": "wall-roof edge as parapet",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1,
+      "required": [
+        "psi"
+      ]
+    },
+    "Log": {
+      "description": "TBD log",
+      "type": "object",
+      "properties": {
+        "date": {
+          "title": "Timestamp",
+          "type": "string"
+        },
+        "status": {
+          "title": "Global state",
+          "type": "string"
+        },
+        "ua": {
+          "title": "UA' assessment",
+          "type": "object",
+          "properties": {
+            "bloc1": {
+              "title": "heating setpoints >= 18C",
+              "type": "object",
+              "$ref": "#/definitions/UaBlock"
+            },
+            "bloc2": {
+              "title": "heating setpoints < 18C",
+              "type": "object",
+              "$ref": "#/definitions/UaBlock"
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        },
+        "results": {
+          "title": "Thermal derating results",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "messages": {
+          "title": "Logged messages",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LogMessage"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "LogMessage": {
+      "description": "TBD log messages",
+      "type": "object",
+      "properties": {
+        "level": {
+          "title": "Severity of logged message (e.g. WARN)",
+          "type": "string"
+        },
+        "message": {
+          "title": "Logged message",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UaBlock": {
+      "description": "UA summary",
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "walls": {
+          "type": "string"
+        },
+        "roofs": {
+          "type": "string"
+        },
+        "floors": {
+          "type": "string"
+        },
+        "doors": {
+          "type": "string"
+        },
+        "windows": {
+          "type": "string"
+        },
+        "skylights": {
+          "type": "string"
+        },
+        "rimjoists": {
+          "type": "string"
+        },
+        "parapets": {
+          "type": "string"
+        },
+        "trim": {
+          "type": "string"
+        },
+        "corners": {
+          "type": "string"
+        },
+        "balconies": {
+          "type": "string"
+        },
+        "grade": {
+          "type": "string"
+        },
+        "other": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 2,
+      "required": ["summary"]
+    }
+  }
+}
