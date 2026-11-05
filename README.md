@@ -74,3 +74,10 @@ The package script verifies bundled dependency hashes and refreshes measure
 metadata. Runtime generation uses only the installed measure's resources and
 the standard OpenStudio installation. Tests and sizing outputs are outside the
 release package.
+
+## TM59 overheating reporting
+
+[TM59 Overheating Metrics v1.0.0](measures/tm_59/README.md) reports TM59:2017
+and TM59:2026 metrics from an annual OpenStudio and EnergyPlus simulation.
+See the measure's [validation record](measures/tm_59/VALIDATION.md) and
+[license](measures/tm_59/LICENSE.md).

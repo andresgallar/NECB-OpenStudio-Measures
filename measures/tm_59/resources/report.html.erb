@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'nonce-<%= report_nonce %>'; style-src 'nonce-<%= report_nonce %>'; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CIBSE TM59:<%= edition %> Overheating Metrics</title>
+  <style nonce="<%= report_nonce %>">
+    body { font-family: system-ui, sans-serif; margin: 2rem; color: #172b39; }
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+    th, td { border: 1px solid #bcc9d1; padding: 0.55rem; text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    th { background: #edf2f5; }
+    .pass { background: #e4f3e7; }
+    .fail { background: #ffe6e1; }
+    canvas { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <h1>CIBSE TM59:<%= edition %> Overheating Metrics</h1>
+  <p>Category <strong><%= category %></strong>. Results cover the selected zones and the simulated weather period.</p>
+  <% if current %>
+    <p>2026 mode uses the prescribed room occupancy windows and base temperature thresholds. Ceiling fan uplift is excluded. Assessment clock offset from the simulation is <%= offset %> hour(s).</p>
+  <% else %>
+    <p>2017 mode covers Criteria A and B for predominantly naturally ventilated dwellings. Criterion A uses the model's People schedules.</p>
+  <% end %>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Thermal zone</th><th scope="col">Room type</th>
+          <th scope="col">Occupied criterion</th><th scope="col">Occupied (h)</th><th scope="col">Exceeded (h)</th>
+          <th scope="col">Exceeded (%)</th><th scope="col">Result</th>
+          <th scope="col">B exceeded (<%= current ? "nights" : "h" %>)</th><th scope="col">B limit (<%= current ? "nights" : "h" %>)</th><th scope="col">Criterion B</th>
+          <th scope="col">Summer &gt;26 °C (h)</th><th scope="col">Summer &gt;27 °C (h)</th><th scope="col">Summer &gt;28 °C (h)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% rows.each do |row| %>
+          <tr>
+            <td><%= ERB::Util.html_escape(row[:zone]) %></td>
+            <td><%= row[:type].tr("_", " ") %></td><td><%= row[:criterion] %></td>
+            <td><%= format('%.2f', row[:occupied_hours]) %></td>
+            <td><%= format('%.2f', row[:exceeded_hours]) %></td>
+            <td><%= format('%.2f', row[:percentage]) %></td>
+            <td class="<%= row[:pass] ? 'pass' : 'fail' %>"><%= row[:pass] ? 'Pass' : 'Fail' %></td>
+            <% if row[:b_pass].nil? %>
+              <td colspan="3">N/A</td>
+            <% else %>
+              <td><%= format('%.2f', row[:b_value]) %></td>
+              <td><%= format('%.2f', row[:b_limit]) %></td>
+              <td class="<%= row[:b_pass] ? 'pass' : 'fail' %>"><%= row[:b_pass] ? 'Pass' : 'Fail' %></td>
+            <% end %>
+            <% row[:bins].each_value do |hours| %>
+              <td><%= format('%.2f', hours) %></td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p>Criterion A allows up to 3% of occupied time from May through September at a difference of at least 1 K after rounding the difference from the adaptive limit.</p>
+  <% if current %>
+    <p>Criterion B allows four nights with a 23:00–08:00 mean above <%= category == 'I' ? 26 : 27 %> °C, based on nights starting May 1 through September 30. Criteria C and D allow up to 3% of occupied time above 26 °C and 28 °C respectively from May through September.</p>
+  <% else %>
+    <p>Criterion B allows up to 1% of annual bedroom time from 22:00 to 07:00 above 26 °C.</p>
+  <% end %>
+  <p>Pass/fail uses unrounded durations.</p>
+  <p>Summer temperature bins include all timesteps from May through September. <a id="timestep-csv" href="<%= csv_name %>">Download timestep data (CSV)</a>.</p>
+
+  <h2>Criterion A adaptive comfort</h2>
+  <% if points.empty? %>
+    <p>The adaptive comfort plot is available for rooms assessed under Criterion A.</p>
+  <% else %>
+    <p>Sampled occupied timesteps assessed under Criterion A from May 1 through September 30. The green and orange lines mark the Category I and II upper limits.</p>
+    <canvas id="scatter" width="900" height="470" aria-label="Scatter plot of operative temperature versus running mean outdoor temperature during occupied Criterion A timesteps"></canvas>
+  <% end %>
+  <script nonce="<%= report_nonce %>">
+    (() => {
+      const prefix = window.location.pathname.match(/([^/]+_)report\.html$/);
+      if (prefix) {
+        const csvLink = document.getElementById('timestep-csv');
+        csvLink.setAttribute('href', './' + prefix[1] + csvLink.getAttribute('href'));
+      }
+
+      const canvas = document.getElementById('scatter');
+      if (!canvas) return;
+
+      const points = <%= points.to_json %>;
+      const ctx = canvas.getContext('2d');
+      const runningMeans = points.map(([trm]) => trm);
+      const indoor = points.map(([, top]) => top);
+      const xMin = Math.floor(Math.min(...runningMeans)) - 1;
+      const xMax = Math.ceil(Math.max(...runningMeans)) + 1;
+      const upperLimit = (trm, allowance) => {
+        const basis = <%= current %> ? Math.max(10, Math.min(trm, 30)) : trm;
+        return 0.33 * basis + 18.8 + allowance;
+      };
+      const yMin = Math.floor(Math.min(...indoor, upperLimit(xMin, 2))) - 1;
+      const yMax = Math.ceil(Math.max(...indoor, upperLimit(xMax, 3))) + 1;
+      const left = 70, right = 880, top = 20, bottom = 410;
+      const x = value => left + (right - left) * (value - xMin) / (xMax - xMin);
+      const y = value => bottom - (bottom - top) * (value - yMin) / (yMax - yMin);
+
+      function line(x1, y1, x2, y2, color) {
+        ctx.strokeStyle = color;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+      }
+
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#172b39';
+      ctx.font = '13px system-ui';
+      for (let i = 0; i <= 5; i++) {
+        const trm = xMin + i * (xMax - xMin) / 5;
+        const temperature = yMin + i * (yMax - yMin) / 5;
+        line(x(trm), top, x(trm), bottom, '#e0e7ec');
+        line(left, y(temperature), right, y(temperature), '#e0e7ec');
+        ctx.fillText(trm.toFixed(1), x(trm) - 14, bottom + 19);
+        ctx.fillText(temperature.toFixed(1), 33, y(temperature) + 4);
+      }
+      ctx.fillText('Running mean outdoor temperature (°C)', 360, 454);
+      ctx.save();
+      ctx.translate(17, 290);
+      ctx.rotate(-Math.PI / 2);
+      ctx.fillText('Operative temperature (°C)', 0, 0);
+      ctx.restore();
+      ctx.fillStyle = 'rgba(35, 100, 160, 0.45)';
+      points.forEach(([trm, temperature]) => ctx.fillRect(x(trm), y(temperature), 2, 2));
+      [[2, '#188548'], [3, '#b56600']].forEach(([allowance, color]) => {
+        const knots = <%= current %> ? [xMin, ...[10, 30].filter(value => value > xMin && value < xMax), xMax] : [xMin, xMax];
+        for (let i = 1; i < knots.length; i++) {
+          line(x(knots[i - 1]), y(upperLimit(knots[i - 1], allowance)), x(knots[i]), y(upperLimit(knots[i], allowance)), color);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

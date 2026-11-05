@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<measure>
+  <schema_version>3.1</schema_version>
+  <name>tm_59_report</name>
+  <uid>ae536531-47ae-41f6-a0d4-e0d89cf39703</uid>
+  <version_id>1cdcb107-8f8a-4219-b60e-f254cacaaf2f</version_id>
+  <version_modified>2026-11-05T02:21:53Z</version_modified>
+  <xml_checksum>FE3DF3EC</xml_checksum>
+  <class_name>TM59Report</class_name>
+  <display_name>CIBSE TM59 Overheating Metrics</display_name>
+  <description>Reports selected zone overheating metrics for TM59:2017 (A and B) or TM59:2026 (A, B, C and D without fan uplift).</description>
+  <modeler_description>Use one annual EnergyPlus run. In the room fields, copy each zone name from the Thermal Zones tab, or use type= followed by a Space Type name to select matching zones. Assign each assessed zone to one group based on its use and modeled ventilation.</modeler_description>
+  <arguments>
+    <argument>
+      <name>tm59_edition</name>
+      <display_name>TM59 edition</display_name>
+      <description>Select the methodology to report.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>2017</default_value>
+      <choices>
+        <choice>
+          <value>2017</value>
+          <display_name>2017</display_name>
+        </choice>
+        <choice>
+          <value>2026</value>
+          <display_name>2026</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>bs_en_15251_category</name>
+      <display_name>Adaptive comfort category</display_name>
+      <description>Use II for typical occupants or I for vulnerable occupants.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>II</default_value>
+      <choices>
+        <choice>
+          <value>I</value>
+          <display_name>I</display_name>
+        </choice>
+        <choice>
+          <value>II</value>
+          <display_name>II</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>living_kitchen_zones</name>
+      <display_name>Naturally ventilated living rooms, kitchens and home offices</display_name>
+      <description>Criterion A. Example: Living Room, Kitchen. Home offices apply in 2026. Enter names from Thermal Zones separated by commas. Quote names that contain commas. Use type= to select by Space Type. Leave empty if unused.</description>
+      <type>String</type>
+      <required>false</required>
+      <model_dependent>false</model_dependent>
+    </argument>
+    <argument>
+      <name>bedroom_zones</name>
+      <display_name>Naturally ventilated bedrooms</display_name>
+      <description>Criteria A and B. Example: Bedroom 1, Bedroom 2. Enter names from Thermal Zones separated by commas. Quote names that contain commas. Use type= to select by Space Type. Leave empty if unused.</description>
+      <type>String</type>
+      <required>false</required>
+      <model_dependent>false</model_dependent>
+    </argument>
+    <argument>
+      <name>living_kitchen_mechanical_zones</name>
+      <display_name>Mechanical or cooled living rooms, kitchens and home offices (2026)</display_name>
+      <description>Criterion C. Example: Cooled Lounge. Enter names from Thermal Zones separated by commas. Quote names that contain commas. Use type= to select by Space Type. Leave empty if unused.</description>
+      <type>String</type>
+      <required>false</required>
+      <model_dependent>false</model_dependent>
+    </argument>
+    <argument>
+      <name>bedroom_mechanical_zones</name>
+      <display_name>Mechanical or cooled bedrooms (2026)</display_name>
+      <description>Criteria B and C. Example: type=Mechanical Bedrooms. Enter names from Thermal Zones separated by commas. Quote names that contain commas. Use type= to select by Space Type. Leave empty if unused.</description>
+      <type>String</type>
+      <required>false</required>
+      <model_dependent>false</model_dependent>
+    </argument>
+    <argument>
+      <name>communal_zones</name>
+      <display_name>Shared corridors, stairs and lobbies (2026)</display_name>
+      <description>Criterion D. Example: Shared Corridor. Enter names from Thermal Zones separated by commas. Quote names that contain commas. Use type= to select by Space Type. Leave empty if unused.</description>
+      <type>String</type>
+      <required>false</required>
+      <model_dependent>false</model_dependent>
+    </argument>
+    <argument>
+      <name>tm59_2026_clock</name>
+      <display_name>2026 summer clock</display_name>
+      <description>Choose Local if the simulation clock already represents local summer time. Choose GMT for UK weather on GMT to shift assessment times one hour forward.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Local</default_value>
+      <choices>
+        <choice>
+          <value>Local</value>
+          <display_name>Local</display_name>
+        </choice>
+        <choice>
+          <value>GMT</value>
+          <display_name>GMT</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>zone_types</name>
+      <display_name>Existing JSON room map (optional)</display_name>
+      <description>For saved workflows that already use a JSON room map. Leave all room fields empty when using this input.</description>
+      <type>String</type>
+      <required>false</required>
+      <model_dependent>false</model_dependent>
+    </argument>
+  </arguments>
+  <outputs>
+    <output>
+      <name>tm_crit_a_hours</name>
+      <display_name>tm_crit_a_hours</display_name>
+      <short_name>tm_crit_a_hours</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_a_pct</name>
+      <display_name>tm_crit_a_pct</display_name>
+      <short_name>tm_crit_a_pct</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_c_hours</name>
+      <display_name>tm_crit_c_hours</display_name>
+      <short_name>tm_crit_c_hours</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_c_pct</name>
+      <display_name>tm_crit_c_pct</display_name>
+      <short_name>tm_crit_c_pct</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_d_hours</name>
+      <display_name>tm_crit_d_hours</display_name>
+      <short_name>tm_crit_d_hours</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_d_pct</name>
+      <display_name>tm_crit_d_pct</display_name>
+      <short_name>tm_crit_d_pct</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_b_hours</name>
+      <display_name>tm_crit_b_hours</display_name>
+      <short_name>tm_crit_b_hours</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_b_nights</name>
+      <display_name>tm_crit_b_nights</display_name>
+      <short_name>tm_crit_b_nights</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_hours_over_twenty_six_c</name>
+      <display_name>tm_hours_over_twenty_six_c</display_name>
+      <short_name>tm_hours_over_twenty_six_c</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_hours_over_twenty_seven_c</name>
+      <display_name>tm_hours_over_twenty_seven_c</display_name>
+      <short_name>tm_hours_over_twenty_seven_c</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_hours_over_twenty_eight_c</name>
+      <display_name>tm_hours_over_twenty_eight_c</display_name>
+      <short_name>tm_hours_over_twenty_eight_c</short_name>
+      <type>Double</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_a_pass</name>
+      <display_name>tm_crit_a_pass</display_name>
+      <short_name>tm_crit_a_pass</short_name>
+      <type>String</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_b_pass</name>
+      <display_name>tm_crit_b_pass</display_name>
+      <short_name>tm_crit_b_pass</short_name>
+      <type>String</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_c_pass</name>
+      <display_name>tm_crit_c_pass</display_name>
+      <short_name>tm_crit_c_pass</short_name>
+      <type>String</type>
+      <model_dependent>false</model_dependent>
+    </output>
+    <output>
+      <name>tm_crit_d_pass</name>
+      <display_name>tm_crit_d_pass</display_name>
+      <short_name>tm_crit_d_pass</short_name>
+      <type>String</type>
+      <model_dependent>false</model_dependent>
+    </output>
+  </outputs>
+  <provenances />
+  <tags>
+    <tag>Reporting.QAQC</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Uses SketchUp API</name>
+      <value>false</value>
+      <datatype>boolean</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Analysis Spreadsheet</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Automatic Report Generation</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ReportingMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Measure Language</name>
+      <value>Ruby</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>LICENSE.md</filename>
+      <filetype>md</filetype>
+      <usage_type>license</usage_type>
+      <checksum>CBFF29F5</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>BC0715C9</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>3.11.0</identifier>
+        <min_compatible>3.11.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>BA53BE12</checksum>
+    </file>
+    <file>
+      <filename>report.html.erb</filename>
+      <filetype>erb</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>B866B9A9</checksum>
+    </file>
+    <file>
+      <filename>tm59_metrics.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>00B9F753</checksum>
+    </file>
+    <file>
+      <filename>ExampleReport_Test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>2322A08B</checksum>
+    </file>
+    <file>
+      <filename>TM59Metrics_Test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>FE4663FA</checksum>
+    </file>
+    <file>
+      <filename>USA_CO_Golden-NREL.724666_TMY3.epw</filename>
+      <filetype>epw</filetype>
+      <usage_type>test</usage_type>
+      <checksum>BDF687C1</checksum>
+    </file>
+    <file>
+      <filename>audit_energyplus_sql.py</filename>
+      <filetype>py</filetype>
+      <usage_type>test</usage_type>
+      <checksum>443362B1</checksum>
+    </file>
+    <file>
+      <filename>bath_reference_daily.csv</filename>
+      <filetype>csv</filetype>
+      <usage_type>test</usage_type>
+      <checksum>72B0B631</checksum>
+    </file>
+  </files>
+</measure>
