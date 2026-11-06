@@ -65,4 +65,4 @@ openstudio tests/ExampleReport_Test.rb
 
 The calculation tests use controlled hourly and ten-minute sequences to check thresholds, time windows and overnight means. The workflow tests generate small models and run the complete OpenStudio/EnergyPlus workflow for both editions. The bundled Golden, Colorado TMY3 file (station 724666) is a test fixture from the [NREL weather data collection](https://data.nlr.gov/submissions/128).
 
-See the [validation record](VALIDATION.md) for the independent EnergyPlus SQL audit, the published reference comparison and instructions to audit your own results. OpenStudio 3.10 could not start EnergyPlus in the Windows test environment due to a DLL relocation error. The package includes the measure's [license](LICENSE.md).
+See the [validation record](VALIDATION.md) for the independent EnergyPlus SQL audit, the published reference comparison and instructions to audit your own results. The package includes the measure's [license](LICENSE.md).
